@@ -4,3 +4,5 @@
 	npm install --global gulp-cli
 #### Создать отдельную папку, в ней пустой файл package.json и команду
 	npm init
+####
+	npm init
