@@ -1,13 +1,9 @@
 
-[Powershell](#powershell) 
-[Docker](#docker-powershell) 
-[Linux](#linux-bash)
+[Powershell](#powershell)  
+[Docker](#docker-powershell)  
+[Linux](#linux-bash)  
 [Visual Studio Hotkeys](#visual-studio-hotkeys)
-
----
-[GULP](gulp-guide.md)
----
----
+#### [GULP](gulp-guide.md)
 
 
 ## POWERSHELL
