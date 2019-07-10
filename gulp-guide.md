@@ -6,3 +6,15 @@
 	npm init
 ####
 	npm init
+	npm install --save-dev gulp
+	gulp --version
+#### Create a gulpfile
+	function defaultTask(cb) {
+	  // place code for your default task here
+	  cb();
+	}
+
+	exports.default = defaultTask
+#### Test it
+	gulp
+	
