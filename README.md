@@ -118,3 +118,7 @@ php.ini
 max_upload_size
 post_max_size
 disable_functions=exec,passthru,shell_exec,system,proc_open,popen,curl_multi_exec,parse_ini_file,show_source,base64_decode
+
+phpmyadmin change patth
+C:\xampp\apache\conf\extra\httpd-xampp.conf
+Alias /phpmyadmin "C:/xampp/phpMyAdmin/"
