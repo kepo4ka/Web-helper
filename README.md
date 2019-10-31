@@ -111,22 +111,27 @@ docker system prune
 
 	git update-index --no-assume-unchanged <file>
 	
+
 ---
 	
 # XAMPP SETTINGS
 
 #### php.ini
-	max_execution_time =0
+	max_execution_time = 0
 	upload_max_filesize = 10000M
 	post_max_size = 10000M
+	disable_functions=exec,passthru,shell_exec,system,proc_open,popen,curl_multi_exec,parse_ini_file,show_source
 
 ####Path mysql
 	C:\xampp\mysql\bin
 	mysql -u root -p database_name < file.sql
 
 #### phpmyadmin
-
 	https://stackoverflow.com/questions/21161908/new-xampp-security-concept-access-forbidden-error-403-windows-7-phpmyadmin
+	
+	change path
+	C:\xampp\apache\conf\extra\httpd-xampp.conf
+	Alias /phpmyadmin "C:/xampp/phpMyAdmin/"
 	
 #### Add this line to xampp\phpmyadmin\config.inc.php
 	$cfg['ExecTimeLimit'] = 6000;
