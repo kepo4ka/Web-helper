@@ -126,6 +126,7 @@ docker system prune
 
 ####Path mysql
 	C:\xampp\mysql\bin
+	
 	mysql -u root -p database_name < file.sql
 
 #### phpmyadmin
