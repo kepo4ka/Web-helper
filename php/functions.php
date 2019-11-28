@@ -1,3 +1,5 @@
+
+<?php
 /**
  * Выполнить запрос
  * @param $url string Адрес, куда будет отправлен запрос
@@ -456,4 +458,44 @@ function str2url($str)
 function json_encodeKirilica($val)
 {
     return json_encode($val, JSON_UNESCAPED_UNICODE);
+}
+
+
+/**
+ * Прочитать файл в родительской папке, зная только относительно расположение относительно текущего файла скрипта
+ * @param $file_name string Имя файла с расширением
+ * @param int $level На сколько уровней выше находится выше
+ * @param string $protocol
+ * @return bool|string Содержимое файла
+ */
+function readFileOverDir($file_name, $level = 1, $protocol = 'http')
+{
+    $dir_name = dirname($_SERVER['SCRIPT_NAME']);
+
+    $dir = recDirName($_SERVER['SCRIPT_NAME'], 0);
+
+
+    if ($dir_name == '\\') {
+        $dir_name = '/';
+    }
+
+    $dir = "$protocol://" . $_SERVER['SERVER_NAME'] . $dir_name . '/' . $file_name;
+
+    $dir = preg_replace('/\/\//m', '/', $dir);
+    $dir = preg_replace("/$protocol:\//m", "$protocol://", $dir);
+
+    $data = file_get_contents($dir);
+
+    return $data;
+}
+
+function recDirName($dir_name, $cur_level, $level = 1)
+{
+    if ($cur_level >= $level || $dir_name == '\\') {
+        return $dir_name;
+    } else {
+        $cur_level++;
+        $dir_name = dirname($dir_name);
+        return recDirName($dir_name, $cur_level);
+    }
 }
