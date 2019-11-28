@@ -3,6 +3,8 @@
 [Docker](#docker-powershell)  
 [Linux](#linux-bash)  
 [Visual Studio Hotkeys](#visual-studio-hotkeys)
+
+[Xampp Settings](#xampp-settings)
 #### [GULP](gulp-guide.md)
 
 
@@ -124,6 +126,7 @@ docker system prune
 
 ####Path mysql
 	C:\xampp\mysql\bin
+	
 	mysql -u root -p database_name < file.sql
 
 #### phpmyadmin
