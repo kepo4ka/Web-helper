@@ -499,3 +499,22 @@ function recDirName($dir_name, $cur_level, $level = 1)
         return recDirName($dir_name, $cur_level);
     }
 }
+
+
+function myReadFile($file_name)
+{
+    $content = [];
+
+    try {
+        if ($file = fopen($file_name, "r")) {
+            while (!feof($file)) {
+                $line = trim(fgets($file));
+                $content[] = $line;
+            }
+            fclose($file);
+        }
+    } catch (Exception $exception) {
+
+    }
+    return $content;
+}
