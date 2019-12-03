@@ -27,3 +27,51 @@ function detectIE() {
     // other browser
     return false;
 }
+
+// округление до двух знаков после запятой
+function roundToTwo(num) {
+    return +(Math.round(num + "e+2") + "e-2");
+}
+
+
+function getQueryParams(qs) {
+    qs = qs.split('+').join(' ');
+
+    var params = {},
+        tokens,
+        re = /[?&]?([^=]+)=([^&]*)/g;
+
+    while (tokens = re.exec(qs)) {
+        params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+    }
+
+    return params;
+}
+
+
+/**
+ * Returns a random number between min (inclusive) and max (exclusive)
+ */
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
+
+function myNotify(message, type) {
+    if (!type) {
+        type = 'info';
+    }
+    toastr[type](message);
+    console.log(message);
+}
+
+
+/**
+ * Изменить адресную строку без перезагрузки
+ * @param name
+ * @param path
+ */
+function changeAddressBarUrl(name, path) {
+    window.history.replaceState({}, name, path);
+}
+
