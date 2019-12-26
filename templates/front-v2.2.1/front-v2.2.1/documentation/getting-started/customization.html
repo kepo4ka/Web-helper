@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Customization - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="../../documentation/assets/css/starter.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--navbar-bg u-header--bg-transparent-xl u-header--sticky-top-xl u-header--starter">
+    <div class="u-header__section bg-primary">
+      <div id="logoAndNav" class="container-fluid">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-xl u-header__navbar u-header__navbar--no-space">
+          <div class="u-header--starter__logo">
+            <!-- White Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-default u-header__navbar-brand-text-white" href="../../html/home/index.html" aria-label="Front">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                <path fill="#E1E4EA" opacity=".65" d="M23,41.1L23,41.1c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C41,33,32.9,41.1,23,41.1z"/>
+                <path class="fill-white" opacity=".5" d="M28,36L28,36c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3C43,0.1,46,3.1,46,6.7v11.4C46,28,38,36,28,36z"/>
+                <path class="fill-white" opacity=".7" d="M18,46.1L18,46.1c-10,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C35.9,38.1,27.9,46.1,18,46.1z"/>
+                <path class="fill-primary" d="M17.4,34.1V18.4h10.2v2.9h-6.4v3.4H26v2.9h-4.8v6.5H17.4z"/>
+              </svg>
+              <span class="u-header__navbar-brand-text">Front</span>
+            </a>
+            <!-- End White Logo -->
+
+            <!-- Default Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-collapsed" href="../../html/home/index.html" aria-label="Front">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
+                <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
+                <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
+                <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
+              </svg>
+              <span class="u-header__navbar-brand-text">Front</span>
+            </a>
+            <!-- End Default Logo -->
+
+            <!-- Responsive Toggle Button -->
+            <button type="button" class="navbar-toggler btn u-hamburger"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navBar"
+                    data-toggle="collapse"
+                    data-target="#navBar">
+              <span id="hamburgerTrigger" class="u-hamburger__box">
+                <span class="u-hamburger__inner"></span>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+          </div>
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <!-- Search -->
+            <form class="form-inline input-group input-group-sm shadow-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="docsSearch">
+                  <span class="fas fa-search"></span>
+                </span>
+              </div>
+              <input class="js-hs-docs-search form-control" type="text" placeholder="Search..." aria-label="Search..." aria-describedby="docsSearch" data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+            </form>
+            <!-- End Search -->
+
+            <ul class="navbar-nav u-header__navbar-nav">
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="../../html/home/index.html">Live Preview</a>
+              </li>
+
+              <!-- Changelog -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut"
+                  data-position="left">
+                <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                  v2.2
+                </a>
+
+                <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_2_1">Latest (v2.2.1)</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_1_1">v2.1.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version1_3">v1.x</a></li>
+                </ul>
+              </li>
+              <!-- End Changelog -->
+
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-light transition-3d-hover" href="../../starter/index.html">
+                  Get Started
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== LEFT ========== -->
+  <div class="js-scrollbar hs-docs-sidebar">
+    <div class="d-flex justify-content-between py-2 py-xl-0">
+      <!-- Search -->
+      <form class="col form-inline input-group-sm u-form--no-brd">
+        <input class="js-hs-docs-search form-control w-100" type="text" placeholder="Search..." data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+      </form>
+      <!-- End Search -->
+
+      <!-- Responsive Toggle Button -->
+      <button class="btn btn-link hs-docs-sidebar__toggle" type="button"
+              data-toggle="collapse"
+              data-target="#navside-accordion"
+              aria-controls="navside-accordion"
+              aria-expanded="false"
+              aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+          <title>Menu</title>
+          <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+        </svg>
+      </button>
+      <!-- End Responsive Toggle Button -->
+    </div>
+
+    <!-- Sidebar Nav -->
+    <nav id="navside-accordion" class="hs-docs-navside collapse">
+      <div id="components" class="collapse show" data-parent="#navside-accordion">
+        <span class="hs-docs-navside__title">Getting started</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../index.html">Introduction</a></li>
+          <li><a href="file-structures.html">File structures</a></li>
+          <li><a href="approach.html">Approach</a></li>
+          <li><a href="gulp.html">Gulp</a></li>
+          <li><a class="active" href="customization.html">Customization</a></li>
+          <li><a href="credits.html">Credits</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Components</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../components/typography.html">Typography</a></li>
+          <li><a href="../components/alerts.html">Alerts</a></li>
+          <li><a href="../components/avatars.html">Avatars</a></li>
+          <li><a href="../components/badge.html">Badge</a></li>
+          <li><a href="../components/breadcrumb.html">Breadcrumb</a></li>
+          <li><a href="../components/buttons.html">Buttons</a></li>
+          <li><a href="../components/cards.html">Cards</a></li>
+          <li><a href="../components/collapse.html">Collapse</a></li>
+          <li><a href="../components/dividers.html">Dividers</a></li>
+          <li><a href="../components/forms.html">Forms</a></li>
+          <li><a href="../components/list-group.html">List group</a></li>
+          <li><a href="../components/navs.html">Navs</a></li>
+          <li><a href="../components/pagination.html">Pagination</a></li>
+          <li><a href="../components/progress.html">Progress</a></li>
+          <li><a href="../components/sticky-footer.html">Sticky footer</a></li>
+          <li><a href="../components/tables.html">Tables</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Plugins</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../plugins/animations.html">Animations</a></li>
+          <li><a href="../plugins/background-video.html">Background video</a></li>
+          <li><a href="../plugins/bootstrap-select.html">Bootstrap select</a></li>
+          <li><a href="../plugins/bootstrap-tagsinput.html">Bootstrap tagsinput</a></li>
+          <li><a href="../plugins/charts.html">Charts</a></li>
+          <li><a href="../plugins/circles.html">Circles (Pie chart)</a></li>
+          <li><a href="../plugins/clipboard.html">Clipboard</a></li>
+          <li><a href="../plugins/countdown.html">Countdown</a></li>
+          <li><a href="../plugins/counters.html">Counters</a></li>
+          <li><a href="../plugins/cubeportfolio.html">Cubeportfolio</a></li>
+          <li><a href="../plugins/datatables.html">Datatables</a></li>
+          <li><a href="../plugins/unfold.html">Unfold (Dropdown and others)</a></li>
+          <li><a href="../plugins/fancybox.html">Fancybox</a></li>
+          <li><a href="../plugins/file-attach.html">File attach</a></li>
+          <li><a href="../plugins/flatpickr.html">Flatpickr</a></li>
+          <li><a href="../plugins/google-map.html">Google Map</a></li>
+          <li><a href="../plugins/go-to.html">Go-to</a></li>
+          <li><a href="../plugins/headers.html">Headers</a></li>
+          <li><a href="../plugins/header-mega-menu.html">Header mega menu</a></li>
+          <li><a href="../plugins/header-fullscreen.html">Header fullscreen</a></li>
+          <li><a href="../plugins/header-searches.html">Header searches</a></li>
+          <li><a href="../plugins/icon-libraries.html">Icon libraries</a></li>
+          <li><a href="../plugins/malihu-scrollbar.html">Malihu scrollbar</a></li>
+          <li><a href="../plugins/modal-window.html">Modal window</a></li>
+          <li><a href="../plugins/parallax.html">Parallax</a></li>
+          <li><a href="../plugins/password-strength.html">Password strength</a></li>
+          <li><a href="../plugins/range-slider.html">Range slider</a></li>
+          <li><a href="../plugins/scroll-effect.html">Scroll effect</a></li>
+          <li><a href="../plugins/scroll-nav.html">Scroll nav</a></li>
+          <li><a href="../plugins/show-animation.html">Show animation</a></li>
+          <li><a href="../plugins/slick-carousel.html">Slick carousel</a></li>
+          <li><a href="../plugins/social-apis.html">Social APIs</a></li>
+          <li><a href="../plugins/step-form.html">Step form (Wizards)</a></li>
+          <li><a href="../plugins/sticky-block.html">Sticky block</a></li>
+          <li><a href="../plugins/summernote.html">Summernote WYSIWYG</a></li>
+          <li><a href="../plugins/svg.html">SVG</a></li>
+          <li><a href="../plugins/toggle-state.html">Toggle state</a></li>
+          <li><a href="../plugins/typedjs.html">Typedjs</a></li>
+          <li><a href="../plugins/validation.html">Validation</a></li>
+          <li><a href="../plugins/video-player.html">Video player</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Utilities</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../utilities/borders.html">Borders</a></li>
+          <li><a href="../utilities/colors.html">Colors</a></li>
+          <li><a href="../utilities/content-alignments.html">Content alignments (with position)</a></li>
+          <li><a href="../utilities/links.html">Links</a></li>
+          <li><a href="../utilities/position.html">Position</a></li>
+          <li><a href="../utilities/shadows.html">Shadows</a></li>
+          <li><a href="../utilities/sizing.html">Sizing</a></li>
+          <li><a href="../utilities/spacing.html">Spacing</a></li>
+          <li><a href="../utilities/transitions.html">Transitions</a></li>
+          <li><a href="../utilities/others.html">Others</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Sidebar Nav -->
+  </div>
+  <!-- ========== END LEFT ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main class="hs-docs-content space-2 space-top-xl-3" role="main">
+    <div class="row">
+      <!-- Section Nav -->
+      <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
+        <ul class="js-scroll-nav hd-doc-section-nav">
+          <li class="hd-doc-section-nav-item">
+            <a href="#how-to-include-a-typeface">How to include a typeface?</a>
+            <ul>
+              <li class="hd-doc-section-nav-item"><a href="#with-sass">with SASS</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#with-css">with CSS</a></li>
+            </ul>
+          </li>
+          <li class="hd-doc-section-nav-item active">
+            <a href="#sass">SASS</a>
+            <ul>
+              <li class="hd-doc-section-nav-item"><a href="#customizing-sass">Customizing SASS</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#variable-defaults">Variable defaults</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#maps-and-loops">Maps and loops</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#modify-map">Modify map</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#add-to-map">Add to map</a></li>
+            </ul>
+          </li>
+          <li class="hd-doc-section-nav-item"><a href="#sass-options">SASS options</a></li>
+          <li class="hd-doc-section-nav-item"><a href="#color">Color</a></li>
+          <li class="hd-doc-section-nav-item"><a href="#all-colors">All colors</a></li>
+          <li class="hd-doc-section-nav-item"><a href="#theme-colors">Theme colors</a></li>
+          <li class="hd-doc-section-nav-item"><a href="#grays">Grays</a></li>
+          <li class="hd-doc-section-nav-item"><a href="#sass-components">SASS Components</a></li>
+          <li class="hd-doc-section-nav-item"><a href="#modifiers">Modifiers</a></li>
+          <li class="hd-doc-section-nav-item"><a href="#customizing-js">Customizing JS</a></li>
+        </ul>
+      </div>
+      <!-- End Section Nav -->
+
+      <div class="col-xl-10 order-xl-1">
+        <div class="border-bottom pb-6 mb-6">
+          <h1 class="font-weight-semi-bold">Customization</h1>
+          <p class="text-dark font-weight-normal mb-0" style="font-size: 1.125rem;">Take advantage of the Front's past, current and future updates, by learning how to create your own content without changing the core styles of Front.</p>
+        </div>
+
+        <div id="how-to-include-a-typeface" class="mb-5">
+          <h2 class="h4">How to include a typeface? <a class="anchorjs-link" href="#how-to-include-a-typeface" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Add or change Front typography with the following instructions.</p>
+        </div>
+
+        <div id="with-sass" class="mb-5">
+          <h2 class="h4">With SASS <a class="anchorjs-link" href="#with-sass" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <ol>
+            <li>
+              Use the <code class="highlighter-rouge">$font-family-base</code> attribute as our typographic base applied to the <code class="highlighter-rouge">&lt;body&gt;</code> in <code class="highlighter-rouge">_user-variables.scss</code> file to change the current font family variable with yours.
+
+              <pre>
+                <code class="language-scss" data-lang="scss">
+                  <span>$font-family-base</span><span>:</span> <span>"Poppins", Helvetica, Arial, sans-serif !default</span><span>;</span>
+                </code>
+              </pre>
+            </li>
+            <li>
+              Add your font stylesheet into the <code class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets. Like:
+
+              <pre>
+                <code class="language-html" data-lang="html">
+                  &lt;!-- CSS Global Compulsory --&gt;
+                  &lt;link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"&gt;
+                </code>
+              </pre>
+            </li>
+          </ol>
+        </div>
+
+        <div id="with-css" class="mb-9">
+          <h2 class="h4">With CSS <a class="anchorjs-link" href="#with-css" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <ol>
+            <li>
+              Simply replace the font family <code class="highlighter-rouge">font-family</code> from <code class="highlighter-rouge">&lt;body&gt;</code> in <code class="highlighter-rouge">theme.css</code> tag with yours.
+
+              <pre>
+                <code class="language-css" data-lang="css">
+                  <span>body</span> <span>{</span>
+                    <span>font-family</span><span>:</span> <span>"Poppins", Helvetica, Arial, sans-serif</span><span>;</span>
+                  <span>}</span>
+                </code>
+              </pre>
+            </li>
+            <li>
+              Add your font stylesheet into the <code class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets. Like:
+
+              <pre>
+                <code class="language-html" data-lang="html">
+                  &lt;!-- CSS Global Compulsory --&gt;
+                  &lt;link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"&gt;
+                </code>
+              </pre>
+            </li>
+          </ol>
+        </div>
+
+        <div id="sass" class="mb-5">
+          <h2 class="h4">SASS <a class="anchorjs-link" href="#sass" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Utilize our source SASS files to take advantage of variables, mixins, and more.</p>
+          <p>Whenever possible, avoid modifying Front's core files. For SASS, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it.</p>
+        </div>
+
+        <div id="customizing-sass" class="mb-5">
+          <h2 class="h4">Customizing SASS <a class="anchorjs-link" href="#customizing-sass" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>To avoid file loss, overrides of your custom styles or any other conflicts during the upgrade process, create or modify your styles with these 2 files <code class="highlighter-rouge">assets/include/scss/</code>:</p>
+
+          <ul>
+            <li><code class="highlighter-rouge">_user-variables.scss</code> - Variables file for customizing or overriding Bootstrap core and Front elements/components that have been tied to variables.</li>
+            <li><code class="highlighter-rouge">_user.scss</code> - Create a new style in here.</li>
+          </ul>
+
+          <div class="alert alert-success mb-5" role="alert">
+            <h3 class="h6 font-weight-bold">Note</h3>
+            <p class="alert-text mb-0">Custom files along with Bootstrap core CSS files will be generated in to the <code class="highlighter-rouge">theme.css</code> file.</p>
+          </div>
+        </div>
+
+        <div id="variable-defaults" class="mb-5">
+          <h2 class="h4">Variable defaults <a class="anchorjs-link" href="#variable-defaults" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Every SASS variable in Front includes the <code class="highlighter-rouge">!default</code> flag allowing you to override the variable's default value in your own SASS without modifying either Bootstrap or Front's source code. Copy and paste variables as needed, modify their values, and remove the <code class="highlighter-rouge">!default</code> flag. If a variable has already been assigned, then it won't be re-assigned by the default values in Front.</p>
+
+          <p>You will find the complete list of Front's variables in <code class="highlighter-rouge">assets/include/scss/_variables.scss</code>.</p>
+
+          <p>Variable overrides within the same SASS file can come before or after the default variables. However, when overriding across SASS files, your overrides must come before you import Front's SASS files.</p>
+
+          <p>Here's an example that changes the <code class="highlighter-rouge">color</code> of the template in the <code class="highlighter-rouge">scss/custom/_custom-variables.scss</code> file when importing and compiling Front via npm:</p>
+
+          <pre>
+            <code class="language-scss" data-lang="scss">
+              // Your variable overrides
+              $blue: #377dff; // Primary color
+            </code>
+          </pre>
+        </div>
+
+        <div id="maps-and-loops" class="mb-5">
+          <h2 class="h4">Maps and loops <a class="anchorjs-link" href="#maps-and-loops" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Bootstrap 4 includes a handful of SASS maps, key value pairs that make it easier to generate families of related CSS. We use SASS maps for our colors, grid breakpoints, and more. Just like SASS variables, all SASS maps include the <code class="highlighter-rouge">!default</code> flag and can be overridden and extended.</p>
+          <p>Some of our SASS maps are merged into empty ones by default. This is done to allow easy expansion of a given SASS map, but comes at the cost of making removing items from a map slightly more difficult.</p>
+        </div>
+
+        <div id="modify-map" class="mb-5">
+          <h2 class="h4">Modify map <a class="anchorjs-link" href="#modify-map" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>To modify an existing color in our <code class="highlighter-rouge">$theme-colors</code> map, add the following to your custom SASS file:</p>
+
+          <pre>
+            <code class="language-scss" data-lang="scss">
+              $theme-colors: (
+                "primary": #377dff,
+                "danger": #de4437
+              );
+            </code>
+          </pre>
+        </div>
+
+        <div id="add-to-map" class="mb-9">
+          <h2 class="h4">Add to map <a class="anchorjs-link" href="#add-to-map" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>To add a new color to <code class="highlighter-rouge">$theme-colors</code>, add the new key and value:</p>
+
+          <pre>
+            <code class="language-scss" data-lang="scss">
+              $theme-colors: (
+                "custom-color": #000
+              );
+            </code>
+          </pre>
+        </div>
+
+        <div id="sass-options" class="mb-9">
+          <h2 class="h4">SASS options <a class="anchorjs-link" href="#sass-options" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Customize Front with our built-in custom variables file and easily toggle global CSS preferences with <code class="highlighter-rouge">$enable-*</code> SASS variables.</p>
+
+          <p>You can find and customize these variables for key global options in Front's <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
+
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th style="width: 20%;">Variable</th>
+                <th>Values</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="highlighter-rouge">$spacer</code></td>
+                <td><code class="highlighter-rouge">1rem</code> (default), or any value &gt; 0</td>
+                <td>Specifies the default spacer value to programmatically generate our <a href="../utilities/spacing.html">spacer utilities</a>.</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">$content-space</code></td>
+                <td><code class="highlighter-rouge">1rem</code> (default), or any value &gt; 0</td>
+                <td>Specifies the default spacer value to programmatically generate our <a href="../utilities/spacing.html">spacer utilities</a>.</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">$enable-rounded</code></td>
+                <td><code class="highlighter-rouge">true</code> (default) or <code class="highlighter-rouge">false</code></td>
+                <td>Enables predefined <code class="highlighter-rouge">border-radius</code> styles on various components.</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">$enable-shadows</code></td>
+                <td><code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code> (default)</td>
+                <td>Enables predefined <code class="highlighter-rouge">box-shadow</code> styles on various components.</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">$enable-accessibility</code></td>
+                <td><code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code> (default)</td>
+                <td>Enables predefined <code class="highlighter-rouge">accessibility</code> styles on various components.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="color" class="mb-9">
+          <h2 class="h4">Color <a class="anchorjs-link" href="#color" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Many of Front's various components and utilities are built through a series of colors defined in a SASS map. This map can be looped over in SASS to quickly generate a series of rulesets.</p>
+        </div>
+
+        <div id="all-colors" class="mb-9">
+          <h2 class="h4">All colors <a class="anchorjs-link" href="#all-colors" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>All colors available in Front, are available as SASS variables and a SASS map in <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #377dff;">Blue</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3" style="background-color: #ffc107;">Yellow</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #00c9a7;">Teal</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #196eff;">Blue darker</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #efa02e;">Yellow darker</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #13d7b6;">Teal lighter</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #19a0ff;">Blue lighter</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3" style="background-color: #fdd14e;">Yellow lighter</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #2d1582;">Indigo</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #de4437;">Red</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3" style="background-color: #00dffc;">Cyan</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #1e2022;">Dark</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #ec5245;">Red lighter</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3" style="background-color: #00dffc;">Cyan lighter</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3" style="background-color: #ffffff;">White</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #3b5998;">Facebook</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #d14130;">Google</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #1da1f2;">Twitter</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #3f729b;">Instagram</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #24292e;">Github</div>
+            </div>
+          </div>
+
+          <p>Here's how you can use these in your SASS:</p>
+
+          <pre>
+            <code class="language-scss" data-lang="scss">
+              .alpha {
+                color: $primary;
+              }
+
+              // From the SASS map with Bootstrap `color()` function {
+              .beta {
+                color: color("purple");
+              }
+            </code>
+          </pre>
+
+          <p><a href="../utilities/colors.html">Color utility classes</a> are also available for setting <code class="highlighter-rouge">color</code> and <code class="highlighter-rouge">background-color</code>.</p>
+        </div>
+
+        <div id="theme-colors" class="mb-9">
+          <h2 class="h4">Theme colors <a class="anchorjs-link" href="#theme-colors" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>We use a subset of all Bootstrap colors to create a smaller color palette for generating color schemes, also available as SASS variables and a SASS map in Front's <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #377dff;">Primary</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #77838f;">Secondary</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #00c9a7;">Success</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #de4437;">Danger</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3" style="background-color: #ffc107;">Warning</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3" style="background-color: #00dffc;">Info</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #1e2022;">Dark</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3 text-white" style="background-color: #2d1582;">Indigo</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3" style="background-color: #f6f9fc;">Light</div>
+            </div>
+            <div class="col-md-4">
+              <div class="rounded p-3 mb-3" style="background-color: #ffffff;">White</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="grays" class="mb-9">
+          <h2 class="h4">Grays <a class="anchorjs-link" href="#grays" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>An expansive set of gray variables and a SASS map in <code class="highlighter-rouge">scss/_variables.scss</code> for consistent shades of gray across your project.</p>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="rounded-top p-3" style="background-color: #f8fafd;">200</div>
+              <div class="p-3" style="background-color: #e7eaf3;">300</div>
+              <div class="p-3 text-white" style="background-color: #bdc5d1;">400</div>
+              <div class="p-3 text-white" style="background-color: #97a4af;">500</div>
+              <div class="p-3 text-white" style="background-color: #8c98a4;">600</div>
+              <div class="p-3 text-white" style="background-color: #77838f;">700</div>
+              <div class="rounded-bottom p-3 text-white" style="background-color: #1e2022;">900</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="sass-components" class="mb-9">
+          <h2 class="h4">SASS Components <a class="anchorjs-link" href="#sass-components" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Many of Bootstrap's components and utilities are built with <code class="highlighter-rouge">@each</code> loops that iterate over a SASS map. This is especially helpful for generating variants of a component by <code class="highlighter-rouge">$theme-colors</code> and creating responsive variants for each breakpoint. As you customize these SASS maps and recompile, you'll automatically see your changes reflected in these loops.</p>
+        </div>
+
+        <div id="modifiers" class="mb-9">
+          <h2 class="h4">Modifiers <a class="anchorjs-link" href="#modifiers" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Many of Bootstrap and Front's components are built with a base-modifier class approach. This means the bulk of the styling is contained to a base class (e.g., <code class="highlighter-rouge">.btn</code>) while style variations are confined to modifier classes (e.g., <code class="highlighter-rouge">.btn-danger</code>). These modifier classes are built from the <code class="highlighter-rouge">$theme-colors</code> map to make customizing the number and name of our modifier classes.</p>
+
+          <p>Here are two examples of how we loop over the <code class="highlighter-rouge">$theme-colors</code> map to generate modifiers to the <code class="highlighter-rouge">.alert</code> component and all our <code class="highlighter-rouge">.bg-*</code> background utilities.</p>
+
+          <pre>
+            <code class="language-scss" data-lang="scss">
+              // Generate alert modifier classes
+              @each $color, $value in $theme-colors {
+                .alert-#{$color} {
+                  @include alert-variant(theme-color-level($color, -10), theme-color-level($color, -9), theme-color-level($color, 6));
+                }
+              }
+
+              // Generate `.bg-*` color utilities
+              @each $color, $value in $theme-colors {
+                @include bg-variant('.bg-#{$color}', $value);
+              }
+            </code>
+          </pre>
+        </div>
+
+        <div id="customizing-js" class="mb-9">
+          <h2 class="h4">Customizing JS <a class="anchorjs-link" href="#customizing-js" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>To avoid file loss, overrides of your custom styles or any other conflicts during the upgrade process, create or modify your styles with <code class="highlighter-rouge">assets/js/theme-custom.js</code> file.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="javascript:;"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="../../documentation/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/components/hs.header.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
+  <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../../assets/js/components/hs.scroll-nav.js"></script>
+  <script src="../../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of malihu scrollbar
+      var $scrollbar = $('.js-scrollbar');
+      $.HSCore.components.HSMalihuScrollBar.init($scrollbar);
+      $($scrollbar).mCustomScrollbar('scrollTo', '#components li a.active');
+    });
+
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+
+      // initialization of HSScrollNav component
+      var offsetTop = $('#logoAndNav').outerHeight();
+
+      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 700,
+        customOffsetTop: 77
+      });
+    });
+  </script>
+</body>
+</html>

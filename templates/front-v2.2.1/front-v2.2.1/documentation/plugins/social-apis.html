@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Social APIs - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="../../documentation/assets/css/starter.css">
+
+  <!-- Facebook Metatags -->
+  <meta property="og:url" content="http://localhost:8080">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Front">
+  <meta property="og:description" content="Your description">
+</head>
+<body>
+  <!-- Facebook Library & init. -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '211814435920978',
+        xfbml: true,
+        version: 'v2.8'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Twitter Library -->
+  <script src="//platform.twitter.com/widgets.js" charset="utf-8" async></script>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--navbar-bg u-header--bg-transparent-xl u-header--sticky-top-xl u-header--starter">
+    <div class="u-header__section bg-primary">
+      <div id="logoAndNav" class="container-fluid">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-xl u-header__navbar u-header__navbar--no-space">
+          <div class="u-header--starter__logo">
+            <!-- White Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-default u-header__navbar-brand-text-white" href="../../html/home/index.html" aria-label="Front">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                <path fill="#E1E4EA" opacity=".65" d="M23,41.1L23,41.1c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C41,33,32.9,41.1,23,41.1z"/>
+                <path class="fill-white" opacity=".5" d="M28,36L28,36c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3C43,0.1,46,3.1,46,6.7v11.4C46,28,38,36,28,36z"/>
+                <path class="fill-white" opacity=".7" d="M18,46.1L18,46.1c-10,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C35.9,38.1,27.9,46.1,18,46.1z"/>
+                <path class="fill-primary" d="M17.4,34.1V18.4h10.2v2.9h-6.4v3.4H26v2.9h-4.8v6.5H17.4z"/>
+              </svg>
+              <span class="u-header__navbar-brand-text">Front</span>
+            </a>
+            <!-- End White Logo -->
+
+            <!-- Default Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-collapsed" href="../../html/home/index.html" aria-label="Front">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
+                <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
+                <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
+                <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
+              </svg>
+              <span class="u-header__navbar-brand-text">Front</span>
+            </a>
+            <!-- End Default Logo -->
+
+            <!-- Responsive Toggle Button -->
+            <button type="button" class="navbar-toggler btn u-hamburger"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navBar"
+                    data-toggle="collapse"
+                    data-target="#navBar">
+              <span id="hamburgerTrigger" class="u-hamburger__box">
+                <span class="u-hamburger__inner"></span>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+          </div>
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <!-- Search -->
+            <form class="form-inline input-group input-group-sm shadow-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="docsSearch">
+                  <span class="fas fa-search"></span>
+                </span>
+              </div>
+              <input class="js-hs-docs-search form-control" type="text" placeholder="Search..." aria-label="Search..." aria-describedby="docsSearch" data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+            </form>
+            <!-- End Search -->
+
+            <ul class="navbar-nav u-header__navbar-nav">
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="../../html/home/index.html">Live Preview</a>
+              </li>
+
+              <!-- Changelog -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut"
+                  data-position="left">
+                <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                  v2.2
+                </a>
+
+                <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_2_1">Latest (v2.2.1)</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_1_1">v2.1.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_3">v1.x</a></li>
+                </ul>
+              </li>
+              <!-- End Changelog -->
+
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-light transition-3d-hover" href="../../starter/index.html">
+                  Get Started
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== LEFT ========== -->
+  <div class="js-scrollbar hs-docs-sidebar">
+    <div class="d-flex justify-content-between py-2 py-xl-0">
+      <!-- Search -->
+      <form class="col form-inline input-group-sm u-form--no-brd">
+        <input class="js-hs-docs-search form-control w-100" type="text" placeholder="Search..." data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+      </form>
+      <!-- End Search -->
+
+      <!-- Responsive Toggle Button -->
+      <button class="btn btn-link hs-docs-sidebar__toggle" type="button"
+              data-toggle="collapse"
+              data-target="#navside-accordion"
+              aria-controls="navside-accordion"
+              aria-expanded="false"
+              aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+          <title>Menu</title>
+          <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+        </svg>
+      </button>
+      <!-- End Responsive Toggle Button -->
+    </div>
+
+    <!-- Sidebar Nav -->
+    <nav id="navside-accordion" class="hs-docs-navside collapse">
+      <div id="components" class="collapse show" data-parent="#navside-accordion">
+        <span class="hs-docs-navside__title">Getting started</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../index.html">Introduction</a></li>
+          <li><a href="../getting-started/file-structures.html">File structures</a></li>
+          <li><a href="../getting-started/approach.html">Approach</a></li>
+          <li><a href="../getting-started/gulp.html">Gulp</a></li>
+          <li><a href="../getting-started/customization.html">Customization</a></li>
+          <li><a href="../getting-started/credits.html">Credits</a></li>
+          <li><a href="../getting-started/changelog.html">Changelog</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Components</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../components/typography.html">Typography</a></li>
+          <li><a href="../components/alerts.html">Alerts</a></li>
+          <li><a href="../components/avatars.html">Avatars</a></li>
+          <li><a href="../components/badge.html">Badge</a></li>
+          <li><a href="../components/breadcrumb.html">Breadcrumb</a></li>
+          <li><a href="../components/buttons.html">Buttons</a></li>
+          <li><a href="../components/cards.html">Cards</a></li>
+          <li><a href="../components/collapse.html">Collapse</a></li>
+          <li><a href="../components/dividers.html">Dividers</a></li>
+          <li><a href="../components/forms.html">Forms</a></li>
+          <li><a href="../components/list-group.html">List group</a></li>
+          <li><a href="../components/navs.html">Navs</a></li>
+          <li><a href="../components/pagination.html">Pagination</a></li>
+          <li><a href="../components/progress.html">Progress</a></li>
+          <li><a href="../components/sticky-footer.html">Sticky footer</a></li>
+          <li><a href="../components/tables.html">Tables</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Plugins</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="animations.html">Animations</a></li>
+          <li><a href="background-video.html">Background video</a></li>
+          <li><a href="bootstrap-select.html">Bootstrap select</a></li>
+          <li><a href="bootstrap-tagsinput.html">Bootstrap tagsinput</a></li>
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="circles.html">Circles (Pie chart)</a></li>
+          <li><a href="clipboard.html">Clipboard</a></li>
+          <li><a href="countdown.html">Countdown</a></li>
+          <li><a href="counters.html">Counters</a></li>
+          <li><a href="cubeportfolio.html">Cubeportfolio</a></li>
+          <li><a href="datatables.html">Datatables</a></li>
+          <li><a href="unfold.html">Unfold (Dropdown and others)</a></li>
+          <li><a href="fancybox.html">Fancybox</a></li>
+          <li><a href="file-attach.html">File attach</a></li>
+          <li><a href="flatpickr.html">Flatpickr</a></li>
+          <li><a href="google-map.html">Google Map</a></li>
+          <li><a href="go-to.html">Go-to</a></li>
+          <li><a href="headers.html">Headers</a></li>
+          <li><a href="header-mega-menu.html">Header mega menu</a></li>
+          <li><a href="header-fullscreen.html">Header fullscreen</a></li>
+          <li><a href="header-searches.html">Header searches</a></li>
+          <li><a href="icon-libraries.html">Icon libraries</a></li>
+          <li><a href="malihu-scrollbar.html">Malihu scrollbar</a></li>
+          <li><a href="modal-window.html">Modal window</a></li>
+          <li><a href="parallax.html">Parallax</a></li>
+          <li><a href="password-strength.html">Password strength</a></li>
+          <li><a href="range-slider.html">Range slider</a></li>
+          <li><a href="scroll-effect.html">Scroll effect</a></li>
+          <li><a href="scroll-nav.html">Scroll nav</a></li>
+          <li><a href="show-animation.html">Show animation</a></li>
+          <li><a href="slick-carousel.html">Slick carousel</a></li>
+          <li><a class="active" href="social-apis.html">Social APIs</a></li>
+          <li><a href="step-form.html">Step form (Wizards)</a></li>
+          <li><a href="sticky-block.html">Sticky block</a></li>
+          <li><a href="summernote.html">Summernote WYSIWYG</a></li>
+          <li><a href="svg.html">SVG</a></li>
+          <li><a href="toggle-state.html">Toggle state</a></li>
+          <li><a href="typedjs.html">Typedjs</a></li>
+          <li><a href="validation.html">Validation</a></li>
+          <li><a href="video-player.html">Video player</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Utilities</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../utilities/borders.html">Borders</a></li>
+          <li><a href="../utilities/colors.html">Colors</a></li>
+          <li><a href="../utilities/content-alignments.html">Content alignments (with position)</a></li>
+          <li><a href="../utilities/links.html">Links</a></li>
+          <li><a href="../utilities/position.html">Position</a></li>
+          <li><a href="../utilities/shadows.html">Shadows</a></li>
+          <li><a href="../utilities/sizing.html">Sizing</a></li>
+          <li><a href="../utilities/spacing.html">Spacing</a></li>
+          <li><a href="../utilities/transitions.html">Transitions</a></li>
+          <li><a href="../utilities/others.html">Others</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Sidebar Nav -->
+  </div>
+  <!-- ========== END LEFT ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main class="hs-docs-content space-2 space-top-xl-3" role="main">
+    <div class="row">
+      <!-- Section Nav -->
+      <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
+        <ul class="js-scroll-nav hd-doc-section-nav">
+          <li class="hd-doc-section-nav-item active">
+            <a href="#instagram">Instagram</a>
+            <ul>
+              <li class="hd-doc-section-nav-item"><a href="#how-to-use-instagram">How to use Instagram?</a></li>
+              <li class="hd-doc-section-nav-item">
+                <a href="#js-behavior">JavaScript behavior</a>
+                <ul>
+                  <li class="hd-doc-section-nav-item"><a href="#objects">Objects</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#callbacks">Callbacks</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#methods">Methods</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="hd-doc-section-nav-item">
+            <a href="#facebook">Facebook</a>
+            <ul>
+              <li class="hd-doc-section-nav-item"><a href="#how-to-use-facebook">How to use Facebook?</a></li>
+              <li class="hd-doc-section-nav-item">
+                <a href="#facebook-examples">Examples</a>
+                <ul>
+                  <li class="hd-doc-section-nav-item"><a href="#page">Page</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#comments">Comments</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#post">Post</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#video">Video</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#like-button">Like button</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#share">Share</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="hd-doc-section-nav-item">
+            <a href="#twitter">Twitter</a>
+            <ul>
+              <li class="hd-doc-section-nav-item"><a href="#how-to-use-twitter">How to use Twitte?</a></li>
+              <li class="hd-doc-section-nav-item">
+                <a href="#twitter-examples">Examples</a>
+                <ul>
+                  <li class="hd-doc-section-nav-item"><a href="#timeline">Timeline</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#card">Card</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- End Section Nav -->
+
+      <div class="col-xl-10 order-xl-1">
+        <div class="border-bottom pb-6 mb-6">
+          <h1 class="font-weight-semi-bold">Social APIs</h1>
+          <p class="text-dark font-weight-normal mb-0" style="font-size: 1.125rem;">Showcase top Social APIs including APIs from Facebook, Twitter, Instagram and others.</p>
+        </div>
+
+        <div id="instagram" class="mb-5">
+          <h2 class="h4">Instagram <a class="anchorjs-link" href="#instagram" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+        </div>
+
+        <div id="how-to-use-instagram" class="mb-5">
+          <h2 class="h4">How to use Instagram? <a class="anchorjs-link" href="#how-to-use-instagram" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Wrap any block in a parent element with an ID or class and add the same ID in the JS init function of the <code class="highlighter-rouge">hs.instagram.js</code> plugin and include the <code class="highlighter-rouge">data-user-id</code>, <code class="highlighter-rouge">data-client-id</code> and <code class="highlighter-rouge">data-token</code> data attributes.</p>
+
+          <p>Copy-paste the following <code class="highlighter-rouge">&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+          <pre>
+            <code class="language-html" data-lang="html">
+              &lt;script src="../../assets/vendor/instafeed.js/instafeed.min.js"&gt;&lt;/script&gt;
+            </code>
+          </pre>
+
+          <p>Copy-paste the following <code class="highlighter-rouge">&lt;script&gt;</code> near the end of your pages under <em><u>JS Front</u></em> to enable it.</p>
+
+          <pre>
+            <code class="language-html" data-lang="html">
+              &lt;script src="../../assets/js/helpers/hs.instagram.js"&gt;&lt;/script&gt;
+            </code>
+          </pre>
+
+          <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag, to enable it.</p>
+
+          <pre>
+            <code class="language-html" data-lang="html">
+              &lt;script&gt;
+                $(document).on('ready', function () {
+                  // initialization of instagram api
+                  $.HSCore.components.HSInstagram.init('#instaFeed', {
+                    after: function () {
+                      // initialization of masonry.js
+                      var $grid = $('.js-instagram').masonry({
+                        percentPosition: true
+                      });
+
+                      // initialization of images loaded
+                      $grid.imagesLoaded().progress(function () {
+                        $grid.masonry();
+                      });
+                    }
+                  });
+                });
+              &lt;/script&gt;
+            </code>
+          </pre>
+        </div>
+
+        <div id="js-behavior" class="mb-5">
+          <h2 class="h4">JavaScript behavior <a class="anchorjs-link" href="#js-behavior" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+        </div>
+
+        <div id="objects" class="mb-5">
+          <h2 class="h4">Objects <a class="anchorjs-link" href="#objects" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Quality of the images.</p>
+
+          <pre>
+            <code class="language-js" data-lang="js">
+              resolution: 'standard_resolution' - string
+            </code>
+          </pre>
+
+          <p>Valid values are:</p>
+          <ul>
+            <li><code class="highlighter-rouge">thumbnail</code> (150x150)</li>
+            <li><code class="highlighter-rouge">low_resolution</code> (306x306)</li>
+            <li><code class="highlighter-rouge">standard_resolution</code> (612x612)</li>
+          </ul>
+
+          <p>Default value is: <code class="highlighter-rouge">thumbnail</code></p>
+        </div>
+
+        <div id="callbacks" class="mb-5">
+          <h2 class="h4">Callbacks <a class="anchorjs-link" href="#callbacks" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <pre>
+            <code class="language-js" data-lang="js">
+              before: function (invoker) {} - function
+              after: function (invoker) {} - function
+              success: function (invoker) {} - function
+              error: function (invoker) {} - function
+            </code>
+          </pre>
+        </div>
+
+        <div id="methods" class="mb-9">
+          <h2 class="h4">Methods <a class="anchorjs-link" href="#methods" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code class="highlighter-rouge">data-</code>, as in <code class="highlighter-rouge">data-user-id=""</code>.</p>
+
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Attributes</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-user-id</code></p>
+                </td>
+                <td>A unique user ID. Use if <code class="highlighter-rouge">data-get</code> is set <code class="highlighter-rouge">true</code>.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-get</code></p>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-client-id</code></p>
+                </td>
+                <td>An ID obtained with the Instagram API. <strong class="text-dark">Required!</strong>.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-token</code></p>
+                </td>
+                <td>A valid oAuth token. Can be used in place of <code class="highlighter-rouge">/</code> along with the user ID.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-get</code></p>
+                </td>
+                <td>
+                  Determines which type of images to output.<br>Valid values are:
+                  <ul>
+                    <li><code class="highlighter-rouge">user</code></li>
+                    <li><code class="highlighter-rouge">popular</code></li>
+                    <li><code class="highlighter-rouge">tagged</code></li>
+                    <li><code class="highlighter-rouge">location</code></li>
+                  </ul>
+                  Default value is <code class="highlighter-rouge">user</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-limit</code></p>
+                </td>
+                <td>Specifies the limit on the number of output images.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-template</code></p>
+                </td>
+                <td>A template element.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">afterShow: function (invoker) {}</code></p>
+                </td>
+                <td>Executes the code inside the body of the function each time it appears.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">beforeShow: function (invoker) {}</code></p>
+                </td>
+                <td>Executes the code inside the body of the function each time it appears.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">success: function (invoker) {}</code></p>
+                </td>
+                <td>Executes the code inside the body of the function if the plugin received the data.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">error: function (invoker) {}</code></p>
+                </td>
+                <td>Executes the code inside the body if the images could not be loaded.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="facebook" class="mb-5">
+          <h2 class="h4">Facebook <a class="anchorjs-link" href="#facebook" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>All Facebook components and documentation can be found on the <a href="https://developers.facebook.com/docs/plugins">Facebook for developers</a> site.</p>
+        </div>
+
+        <div id="how-to-use-facebook" class="mb-9">
+          <h2 class="h4">How to use Facebook? <a class="anchorjs-link" href="#how-to-use-facebook" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <p>Include these metatags right before <code class="highlighter-rouge">&lt;head&gt;</code> tag is closed.</p>
+          <pre>
+            <code class="language-markup" data-lang="html">
+              &lt;head&gt;
+                &lt;meta property="og:url" content="http://localhost:8080"&gt;
+                &lt;meta property="og:type" content="website"&gt;
+                &lt;meta property="og:title" content="Front"&gt;
+                &lt;meta property="og:description" content="Your description"&gt;
+              &lt;/head&gt;
+            </code>
+          </pre>
+
+          <p>Include this script right after open <code class="highlighter-rouge">&lt;body&gt;</code> tag.</p>
+          <pre>
+            <code class="language-markup" data-lang="html">
+              &lt;body&gt;
+                &lt;script&gt;
+                  window.fbAsyncInit = function () {
+                    FB.init({
+                      appId: '211814435920978',
+                      xfbml: true,
+                      version: 'v2.8'
+                    });
+                  };
+
+                  (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) {
+                      return;
+                    }
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }(document, 'script', 'facebook-jssdk'));
+                &lt;/script&gt;
+              &lt;/body&gt;
+            </code>
+          </pre>
+        </div>
+
+        <div id="facebook-examples" class="mb-5">
+          <h2 class="h4">Examples <a class="anchorjs-link" href="#facebook-examples" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+        </div>
+
+        <div id="page" class="mb-5">
+          <h2 class="h4">Page <a class="anchorjs-link" href="#page" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-1" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-1" data-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-1" data-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-1">
+              <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                <div class="fb-page"
+                     data-href="https://www.facebook.com/htmlstream"
+                     data-tabs="timeline"
+                     data-width="500"
+                     data-height="500">
+                  <blockquote cite="https://www.facebook.com/unify2dev" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/unify2dev">Facebook</a>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;div class="fb-page"
+                         data-href="https://www.facebook.com/htmlstream"
+                         data-tabs="timeline"
+                         data-width="500"
+                         data-height="500"&gt;
+                      &lt;blockquote cite="https://www.facebook.com/unify2dev" class="fb-xfbml-parse-ignore"&gt;
+                        &lt;a href="https://www.facebook.com/unify2dev"&gt;Facebook&lt;/a&gt;
+                      &lt;/blockquote&gt;
+                    &lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+
+        <div id="comments" class="mb-5">
+          <h2 class="h4">Comments <a class="anchorjs-link" href="#comments" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-2" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-2" data-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-2" data-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-2">
+              <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                <div class="fb-comments"
+                     data-href="https://www.facebook.com/zuck/posts/10102577175875681?comment_id=1193531464007751&reply_comment_id=654912701278942"
+                     data-numposts="2"
+                     data-width="100%"></div>
+              </div>
+              <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;div class="fb-comments"
+                       data-href="https://www.facebook.com/zuck/posts/10102577175875681?comment_id=1193531464007751&reply_comment_id=654912701278942"
+                       data-numposts="2"
+                       data-width="100%"&gt;&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+
+        <div id="post" class="mb-5">
+          <h2 class="h4">Post <a class="anchorjs-link" href="#post" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-3" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-3" data-toggle="pill" href="#pills-result-3" role="tab" aria-controls="pills-result-3" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-3" data-toggle="pill" href="#pills-html-3" role="tab" aria-controls="pills-html-3" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-3">
+              <div class="tab-pane fade p-4 show active" id="pills-result-3" role="tabpanel" aria-labelledby="pills-result-tab-3">
+                <div class="fb-post"
+                     data-href="https://www.facebook.com/20531316728/posts/10154009990506729"></div>
+              </div>
+              <div class="tab-pane fade" id="pills-html-3" role="tabpanel" aria-labelledby="pills-html-tab-3">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;div class="fb-post"
+                        data-href="https://www.facebook.com/20531316728/posts/10154009990506729"&gt;&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+
+        <div id="video" class="mb-5">
+          <h2 class="h4">Video <a class="anchorjs-link" href="#video" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-4" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-4" data-toggle="pill" href="#pills-result-4" role="tab" aria-controls="pills-result-4" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-4" data-toggle="pill" href="#pills-html-4" role="tab" aria-controls="pills-html-4" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-4">
+              <div class="tab-pane fade p-4 show active" id="pills-result-4" role="tabpanel" aria-labelledby="pills-result-tab-4">
+                <div class="fb-video"
+                     data-href="https://www.facebook.com/facebook/videos/10153231379946729/"
+                     data-width="500"
+                     data-show-text="false">
+                  <blockquote cite="https://www.facebook.com/facebook/videos/10153231379946729/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/facebook/videos/10153231379946729/">How to Share With Just Friends</a>
+                    <p>How to share with just friends.</p>Posted by
+                    <a href="https://www.facebook.com/facebook/">Facebook</a>
+                    on Friday, 1 January 2018
+                  </blockquote>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-html-4" role="tabpanel" aria-labelledby="pills-html-tab-4">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;div class="fb-video"
+                         data-href="https://www.facebook.com/facebook/videos/10153231379946729/"
+                         data-width="500"
+                         data-show-text="false"&gt;
+                      &lt;blockquote cite="https://www.facebook.com/facebook/videos/10153231379946729/" class="fb-xfbml-parse-ignore"&gt;
+                        &lt;a href="https://www.facebook.com/facebook/videos/10153231379946729/"&gt;How to Share With Just Friends&lt;/a&gt;
+                        &lt;p&gt;How to share with just friends.&lt;/p&gt;Posted by
+                        &lt;a href="https://www.facebook.com/facebook/"&gt;Facebook&lt;/a&gt;
+                        on Friday, 1 January 2018
+                      &lt;/blockquote&gt;
+                    &lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+
+        <div id="like-button" class="mb-5">
+          <h2 class="h4">Like button <a class="anchorjs-link" href="#like-button" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-5" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-5" data-toggle="pill" href="#pills-result-5" role="tab" aria-controls="pills-result-5" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-5" data-toggle="pill" href="#pills-html-5" role="tab" aria-controls="pills-html-5" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-5">
+              <div class="tab-pane fade p-4 show active" id="pills-result-5" role="tabpanel" aria-labelledby="pills-result-tab-5">
+                <div class="fb-like"></div>
+              </div>
+              <div class="tab-pane fade" id="pills-html-5" role="tabpanel" aria-labelledby="pills-html-tab-5">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;div class="fb-like"&gt;&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+
+        <div id="share" class="mb-9">
+          <h2 class="h4">Share <a class="anchorjs-link" href="#share" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-6" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-6" data-toggle="pill" href="#pills-result-6" role="tab" aria-controls="pills-result-6" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-6" data-toggle="pill" href="#pills-html-6" role="tab" aria-controls="pills-html-6" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-6">
+              <div class="tab-pane fade p-4 show active" id="pills-result-6" role="tabpanel" aria-labelledby="pills-result-tab-6">
+                <div class="fb-share-button"
+                     data-href="https://developers.facebook.com/docs/plugins/"
+                     data-layout="button_count"
+                     data-size="small"
+                     data-mobile-iframe="true">
+                  <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-html-6" role="tabpanel" aria-labelledby="pills-html-tab-6">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;div class="fb-share-button"
+                         data-href="https://developers.facebook.com/docs/plugins/"
+                         data-layout="button_count"
+                         data-size="small"
+                         data-mobile-iframe="true"&gt;
+                      &lt;a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"&gt;Share&lt;/a&gt;
+                    &lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+
+        <div id="twitter" class="mb-5">
+          <h2 class="h4">Twitter <a class="anchorjs-link" href="#twitter" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>All Twitter components and documentation can be found on the <a href="https://dev.twitter.com/web/overview">Twitter developer documentation</a> site.</p>
+        </div>
+
+        <div id="how-to-use-twitter" class="mb-5">
+          <h2 class="h4">How to use Twitter? <a class="anchorjs-link" href="#how-to-use-twitter" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <p>Include this script right after open <code class="highlighter-rouge">&lt;body&gt;</code> tag.</p>
+          <pre>
+            <code class="language-markup" data-lang="html">
+              &lt;body&gt;
+                &lt;script src="//platform.twitter.com/widgets.js" charset="utf-8" async&gt;&lt;/script&gt;
+              &lt;/body&gt;
+            </code>
+          </pre>
+        </div>
+
+        <div id="twitter-examples" class="mb-5">
+          <h2 class="h4">Examples <a class="anchorjs-link" href="#twitter-examples" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+        </div>
+
+        <div id="timeline" class="mb-5">
+          <h2 class="h4">Timeline <a class="anchorjs-link" href="#timeline" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-7" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-7" data-toggle="pill" href="#pills-result-7" role="tab" aria-controls="pills-result-7" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-7" data-toggle="pill" href="#pills-html-7" role="tab" aria-controls="pills-html-7" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-7">
+              <div class="tab-pane fade p-4 show active" id="pills-result-7" role="tabpanel" aria-labelledby="pills-result-tab-7">
+                <div style="overflow: auto; height: 300px;">
+                  <a class="twitter-timeline" href="https://twitter.com/htmlstream">Tweets by htmlstream</a>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-html-7" role="tabpanel" aria-labelledby="pills-html-tab-7">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;div style="overflow: auto; height: 300px;"&gt;
+                      &lt;a class="twitter-timeline" href="https://twitter.com/htmlstream"&gt;Tweets by htmlstream&lt;/a&gt;
+                    &lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+
+        <div id="card" class="mb-9">
+          <h2 class="h4">Card <a class="anchorjs-link" href="#card" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-8" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-8" data-toggle="pill" href="#pills-result-8" role="tab" aria-controls="pills-result-8" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-8" data-toggle="pill" href="#pills-html-8" role="tab" aria-controls="pills-html-8" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-8">
+              <div class="tab-pane fade p-4 show active" id="pills-result-8" role="tabpanel" aria-labelledby="pills-result-tab-8">
+                <blockquote class="twitter-tweet" data-lang="en-gb">
+                  <a href="https://twitter.com/htmlstream/status/983501442173595648"></a>
+                </blockquote>
+              </div>
+              <div class="tab-pane fade" id="pills-html-8" role="tabpanel" aria-labelledby="pills-html-tab-8">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;blockquote class="twitter-tweet" data-lang="en-gb"&gt;
+                      &lt;a href="https://twitter.com/htmlstream/status/983501442173595648"&gt;&lt;/a&gt;
+                    &lt;/blockquote&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="javascript:;"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../assets/vendor/player.js/dist/player.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="../../documentation/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/components/hs.header.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
+  <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../../assets/js/components/hs.scroll-nav.js"></script>
+  <script src="../../assets/js/components/hs.video-player.js"></script>
+  <script src="../../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of malihu scrollbar
+      var $scrollbar = $('.js-scrollbar');
+      $.HSCore.components.HSMalihuScrollBar.init($scrollbar);
+      $($scrollbar).mCustomScrollbar('scrollTo', '#components li a.active');
+
+      // initialization of video player
+      $.HSCore.components.HSVideoPlayer.init('.js-inline-video-player');
+    });
+
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+
+      // initialization of HSScrollNav component
+      var offsetTop = $('#logoAndNav').outerHeight();
+
+      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 700,
+        customOffsetTop: 77
+      });
+    });
+  </script>
+</body>
+</html>

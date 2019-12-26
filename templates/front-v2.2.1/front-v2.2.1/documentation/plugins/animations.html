@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Animations - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="../../documentation/assets/css/starter.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--navbar-bg u-header--bg-transparent-xl u-header--sticky-top-xl u-header--starter">
+    <div class="u-header__section bg-primary">
+      <div id="logoAndNav" class="container-fluid">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-xl u-header__navbar u-header__navbar--no-space">
+          <div class="u-header--starter__logo">
+            <!-- White Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-default u-header__navbar-brand-text-white" href="../../html/home/index.html" aria-label="Front">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                <path fill="#E1E4EA" opacity=".65" d="M23,41.1L23,41.1c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C41,33,32.9,41.1,23,41.1z"/>
+                <path class="fill-white" opacity=".5" d="M28,36L28,36c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3C43,0.1,46,3.1,46,6.7v11.4C46,28,38,36,28,36z"/>
+                <path class="fill-white" opacity=".7" d="M18,46.1L18,46.1c-10,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C35.9,38.1,27.9,46.1,18,46.1z"/>
+                <path class="fill-primary" d="M17.4,34.1V18.4h10.2v2.9h-6.4v3.4H26v2.9h-4.8v6.5H17.4z"/>
+              </svg>
+              <span class="u-header__navbar-brand-text">Front</span>
+            </a>
+            <!-- End White Logo -->
+
+            <!-- Default Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-collapsed" href="../../html/home/index.html" aria-label="Front">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
+                <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
+                <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
+                <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
+              </svg>
+              <span class="u-header__navbar-brand-text">Front</span>
+            </a>
+            <!-- End Default Logo -->
+
+            <!-- Responsive Toggle Button -->
+            <button type="button" class="navbar-toggler btn u-hamburger"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navBar"
+                    data-toggle="collapse"
+                    data-target="#navBar">
+              <span id="hamburgerTrigger" class="u-hamburger__box">
+                <span class="u-hamburger__inner"></span>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+          </div>
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <!-- Search -->
+            <form class="form-inline input-group input-group-sm shadow-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="docsSearch">
+                  <span class="fas fa-search"></span>
+                </span>
+              </div>
+              <input class="js-hs-docs-search form-control" type="text" placeholder="Search..." aria-label="Search..." aria-describedby="docsSearch" data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+            </form>
+            <!-- End Search -->
+
+            <ul class="navbar-nav u-header__navbar-nav">
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="../../html/home/index.html">Live Preview</a>
+              </li>
+
+              <!-- Changelog -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut"
+                  data-position="left">
+                <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                  v2.2
+                </a>
+
+                <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_2_1">Latest (v2.2.1)</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_1_1">v2.1.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_3">v1.x</a></li>
+                </ul>
+              </li>
+              <!-- End Changelog -->
+
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-light transition-3d-hover" href="../../starter/index.html">
+                  Get Started
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== LEFT ========== -->
+  <div class="js-scrollbar hs-docs-sidebar">
+    <div class="d-flex justify-content-between py-2 py-xl-0">
+      <!-- Search -->
+      <form class="col form-inline input-group-sm u-form--no-brd">
+        <input class="js-hs-docs-search form-control w-100" type="text" placeholder="Search..." data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+      </form>
+      <!-- End Search -->
+
+      <!-- Responsive Toggle Button -->
+      <button class="btn btn-link hs-docs-sidebar__toggle" type="button"
+              data-toggle="collapse"
+              data-target="#navside-accordion"
+              aria-controls="navside-accordion"
+              aria-expanded="false"
+              aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+          <title>Menu</title>
+          <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+        </svg>
+      </button>
+      <!-- End Responsive Toggle Button -->
+    </div>
+
+    <!-- Sidebar Nav -->
+    <nav id="navside-accordion" class="hs-docs-navside collapse">
+      <div id="components" class="collapse show" data-parent="#navside-accordion">
+        <span class="hs-docs-navside__title">Getting started</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../index.html">Introduction</a></li>
+          <li><a href="../getting-started/file-structures.html">File structures</a></li>
+          <li><a href="../getting-started/approach.html">Approach</a></li>
+          <li><a href="../getting-started/gulp.html">Gulp</a></li>
+          <li><a href="../getting-started/customization.html">Customization</a></li>
+          <li><a href="../getting-started/credits.html">Credits</a></li>
+          <li><a href="../getting-started/changelog.html">Changelog</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Components</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../components/typography.html">Typography</a></li>
+          <li><a href="../components/alerts.html">Alerts</a></li>
+          <li><a href="../components/avatars.html">Avatars</a></li>
+          <li><a href="../components/badge.html">Badge</a></li>
+          <li><a href="../components/breadcrumb.html">Breadcrumb</a></li>
+          <li><a href="../components/buttons.html">Buttons</a></li>
+          <li><a href="../components/cards.html">Cards</a></li>
+          <li><a href="../components/collapse.html">Collapse</a></li>
+          <li><a href="../components/dividers.html">Dividers</a></li>
+          <li><a href="../components/forms.html">Forms</a></li>
+          <li><a href="../components/list-group.html">List group</a></li>
+          <li><a href="../components/navs.html">Navs</a></li>
+          <li><a href="../components/pagination.html">Pagination</a></li>
+          <li><a href="../components/progress.html">Progress</a></li>
+          <li><a href="../components/sticky-footer.html">Sticky footer</a></li>
+          <li><a href="../components/tables.html">Tables</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Plugins</span>
+        <ul class="hs-docs-navside__links">
+          <li><a class="active" href="animations.html">Animations</a></li>
+          <li><a href="background-video.html">Background video</a></li>
+          <li><a href="bootstrap-select.html">Bootstrap select</a></li>
+          <li><a href="bootstrap-tagsinput.html">Bootstrap tagsinput</a></li>
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="circles.html">Circles (Pie chart)</a></li>
+          <li><a href="clipboard.html">Clipboard</a></li>
+          <li><a href="countdown.html">Countdown</a></li>
+          <li><a href="counters.html">Counters</a></li>
+          <li><a href="cubeportfolio.html">Cubeportfolio</a></li>
+          <li><a href="datatables.html">Datatables</a></li>
+          <li><a href="unfold.html">Unfold (Dropdown and others)</a></li>
+          <li><a href="fancybox.html">Fancybox</a></li>
+          <li><a href="file-attach.html">File attach</a></li>
+          <li><a href="flatpickr.html">Flatpickr</a></li>
+          <li><a href="google-map.html">Google Map</a></li>
+          <li><a href="go-to.html">Go-to</a></li>
+          <li><a href="headers.html">Headers</a></li>
+          <li><a href="header-mega-menu.html">Header mega menu</a></li>
+          <li><a href="header-fullscreen.html">Header fullscreen</a></li>
+          <li><a href="header-searches.html">Header searches</a></li>
+          <li><a href="icon-libraries.html">Icon libraries</a></li>
+          <li><a href="malihu-scrollbar.html">Malihu scrollbar</a></li>
+          <li><a href="modal-window.html">Modal window</a></li>
+          <li><a href="parallax.html">Parallax</a></li>
+          <li><a href="password-strength.html">Password strength</a></li>
+          <li><a href="range-slider.html">Range slider</a></li>
+          <li><a href="scroll-effect.html">Scroll effect</a></li>
+          <li><a href="scroll-nav.html">Scroll nav</a></li>
+          <li><a href="show-animation.html">Show animation</a></li>
+          <li><a href="slick-carousel.html">Slick carousel</a></li>
+          <li><a href="social-apis.html">Social APIs</a></li>
+          <li><a href="step-form.html">Step form (Wizards)</a></li>
+          <li><a href="sticky-block.html">Sticky block</a></li>
+          <li><a href="summernote.html">Summernote WYSIWYG</a></li>
+          <li><a href="svg.html">SVG</a></li>
+          <li><a href="toggle-state.html">Toggle state</a></li>
+          <li><a href="typedjs.html">Typedjs</a></li>
+          <li><a href="validation.html">Validation</a></li>
+          <li><a href="video-player.html">Video player</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Utilities</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../utilities/borders.html">Borders</a></li>
+          <li><a href="../utilities/colors.html">Colors</a></li>
+          <li><a href="../utilities/content-alignments.html">Content alignments (with position)</a></li>
+          <li><a href="../utilities/links.html">Links</a></li>
+          <li><a href="../utilities/position.html">Position</a></li>
+          <li><a href="../utilities/shadows.html">Shadows</a></li>
+          <li><a href="../utilities/sizing.html">Sizing</a></li>
+          <li><a href="../utilities/spacing.html">Spacing</a></li>
+          <li><a href="../utilities/transitions.html">Transitions</a></li>
+          <li><a href="../utilities/others.html">Others</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Sidebar Nav -->
+  </div>
+  <!-- ========== END LEFT ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main class="hs-docs-content space-2 space-top-xl-3" role="main">
+    <div class="row">
+      <!-- Section Nav -->
+      <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
+        <ul class="js-scroll-nav hd-doc-section-nav">
+          <li class="hd-doc-section-nav-item active">
+            <a href="#animate.css">Animate.css</a>
+            <ul>
+              <li class="hd-doc-section-nav-item"><a href="#usage">Usage</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#animation-classes">Animation classes</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#usage-example">Usage example</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#customize">Customize</a></li>
+            </ul>
+          </li>
+          <li class="hd-doc-section-nav-item">
+            <a href="#onscroll-animation">On scroll animation</a>
+            <ul>
+              <li class="hd-doc-section-nav-item"><a href="#how-to-use">How to use?</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#basic-example">Basic example</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#onscroll-examples">Examples</a></li>
+              <li class="hd-doc-section-nav-item">
+                <a href="#js-behavior">JavaScript behavior</a>
+                <ul>
+                  <li class="hd-doc-section-nav-item"><a href="#objects">Objects</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#callbacks">Callbacks</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#methods">Methods</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- End Section Nav -->
+
+      <div class="col-xl-10 order-xl-1">
+        <div class="border-bottom pb-6 mb-6">
+          <h1 class="font-weight-semi-bold">Animations</h1>
+          <p class="text-dark font-weight-normal mb-0" style="font-size: 1.125rem;">A cross-browser library of CSS and JavaScript animations.</p>
+        </div>
+
+        <div id="animate.css" class="mb-5">
+          <h2 class="h4">Animate.css <a class="anchorjs-link" href="#animate.css" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p><code class="highlighter-rouge">animate.css</code> is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.</p>
+        </div>
+
+        <div id="usage" class="mb-5">
+          <h2 class="h4">Usage <a class="anchorjs-link" href="#usage" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code class="highlighter-rouge">&lt;head&gt;</code> to load the CSS.</p>
+
+          <pre>
+            <code class="language-html" data-lang="html">
+              &lt;link rel="stylesheet" href="assets/vendor/animate.css"&gt;
+            </code>
+          </pre>
+
+          <p>Add the class <code class="highlighter-rouge">.animated</code> to the element you want to animate.</p>
+
+          <div class="alert alert-warning mb-3" role="alert">
+            <h3 id="infinity" class="h6 font-weight-bold">Infinity</h3>
+            <p class="alert-text mb-0">You may also want to include the class <code class="highlighter-rouge">.infinite</code> for an infinite loop</p>
+          </div>
+        </div>
+
+        <div id="animation-classes" class="mb-5">
+          <h2 class="h4">Animation classes <a class="anchorjs-link" href="#animation-classes" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Add one of the following animation classes:</p>
+
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Class names</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="highlighter-rouge">.bounce</code></td>
+                <td><code class="highlighter-rouge">.flash</code></td>
+                <td><code class="highlighter-rouge">.pulse</code></td>
+                <td><code class="highlighter-rouge">.rubberBand</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.shake</code></td>
+                <td><code class="highlighter-rouge">.headShake</code></td>
+                <td><code class="highlighter-rouge">.swing</code></td>
+                <td><code class="highlighter-rouge">.tada</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.wobble</code></td>
+                <td><code class="highlighter-rouge">.jello</code></td>
+                <td><code class="highlighter-rouge">.bounceIn</code></td>
+                <td><code class="highlighter-rouge">.bounceInDown</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.bounceInLeft</code></td>
+                <td><code class="highlighter-rouge">.bounceInRight</code></td>
+                <td><code class="highlighter-rouge">.bounceInUp</code></td>
+                <td><code class="highlighter-rouge">.bounceOut</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.bounceOutDown</code></td>
+                <td><code class="highlighter-rouge">.bounceOutLeft</code></td>
+                <td><code class="highlighter-rouge">.bounceOutRight</code></td>
+                <td><code class="highlighter-rouge">.bounceOutUp</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.fadeIn</code></td>
+                <td><code class="highlighter-rouge">.fadeInDown</code></td>
+                <td><code class="highlighter-rouge">.fadeInDownBig</code></td>
+                <td><code class="highlighter-rouge">.fadeInLeft</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.fadeInLeftBig</code></td>
+                <td><code class="highlighter-rouge">.fadeInRight</code></td>
+                <td><code class="highlighter-rouge">.fadeInRightBig</code></td>
+                <td><code class="highlighter-rouge">.fadeInUp</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.fadeInUpBig</code></td>
+                <td><code class="highlighter-rouge">.fadeOut</code></td>
+                <td><code class="highlighter-rouge">.fadeOutDown</code></td>
+                <td><code class="highlighter-rouge">.fadeOutDownBig</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.fadeOutLeft</code></td>
+                <td><code class="highlighter-rouge">.fadeOutLeftBig</code></td>
+                <td><code class="highlighter-rouge">.fadeOutRight</code></td>
+                <td><code class="highlighter-rouge">.fadeOutRightBig</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.fadeOutUp</code></td>
+                <td><code class="highlighter-rouge">.fadeOutUpBig</code></td>
+                <td><code class="highlighter-rouge">.flipInX</code></td>
+                <td><code class="highlighter-rouge">.flipInY</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.flipOutX</code></td>
+                <td><code class="highlighter-rouge">.flipOutY</code></td>
+                <td><code class="highlighter-rouge">.lightSpeedIn</code></td>
+                <td><code class="highlighter-rouge">.lightSpeedOut</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.rotateIn</code></td>
+                <td><code class="highlighter-rouge">.rotateInDownLeft</code></td>
+                <td><code class="highlighter-rouge">.rotateInDownRight</code></td>
+                <td><code class="highlighter-rouge">.rotateInUpLeft</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.rotateInUpRight</code></td>
+                <td><code class="highlighter-rouge">.rotateOut</code></td>
+                <td><code class="highlighter-rouge">.rotateOutDownLeft</code></td>
+                <td><code class="highlighter-rouge">.rotateOutDownRight</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.rotateOutUpLeft</code></td>
+                <td><code class="highlighter-rouge">.rotateOutUpRight</code></td>
+                <td><code class="highlighter-rouge">.hinge</code></td>
+                <td><code class="highlighter-rouge">.jackInTheBox</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.rollIn</code></td>
+                <td><code class="highlighter-rouge">.rollOut</code></td>
+                <td><code class="highlighter-rouge">.zoomIn</code></td>
+                <td><code class="highlighter-rouge">.zoomInDown</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.zoomInLeft</code></td>
+                <td><code class="highlighter-rouge">.zoomInRight</code></td>
+                <td><code class="highlighter-rouge">.zoomInUp</code></td>
+                <td><code class="highlighter-rouge">.zoomOut</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.zoomOutDown</code></td>
+                <td><code class="highlighter-rouge">.zoomOutLeft</code></td>
+                <td><code class="highlighter-rouge">.zoomOutRight</code></td>
+                <td><code class="highlighter-rouge">.zoomOutUp</code></td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">.slideInDown</code></td>
+                <td><code class="highlighter-rouge">.slideInLeft</code></td>
+                <td><code class="highlighter-rouge">.slideInRight</code></td>
+                <td><code class="highlighter-rouge">.slideInUp</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="usage-example" class="mb-5">
+          <h2 class="h4">Usage Example <a class="anchorjs-link" href="#usage-example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <pre>
+            <code class="language-markup">
+              &lt;h1 class="animated infinite bounce"&gt;Example&lt;/h1&gt;
+            </code>
+          </pre>
+        </div>
+
+        <div id="customize" class="mb-9">
+          <h2 class="h4">Customize <a class="anchorjs-link" href="#customize" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>You can change the duration of your animations, add a delay or change the number of times that it plays:</p>
+
+          <pre>
+            <code class="language-scss" data-lang="scss">
+              <span>#yourElement</span> <span>{</span>
+                <span>-vendor-animation-duration:</span><span>:</span> <span>3s</span><span>;</span>
+                <span>-vendor-animation-delay:</span><span>:</span> <span>2s</span><span>;</span>
+                <span>-vendor-animation-iteration-count:</span><span>:</span> <span>infinite</span><span>;</span>
+              <span>}</span>
+            </code>
+          </pre>
+        </div>
+
+        <div id="onscroll-animation" class="mb-5">
+          <h2 class="h4">On scroll animation <a class="anchorjs-link" href="#onscroll-animation" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p><code class="highlighter-rouge">hs.onscroll-animation.js</code> plugin allows you to animate objects by triggering <code class="highlighter-rouge">.u-in-viewport</code> class, as you scroll down to it.</p>
+        </div>
+
+        <div id="how-to-use" class="mb-5">
+          <h2 class="h4">How to use? <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code class="highlighter-rouge">&lt;head&gt;</code> to load the CSS.</p>
+
+          <pre>
+            <code class="language-html" data-lang="html">
+              &lt;link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css"&gt;
+            </code>
+          </pre>
+
+          <p>Copy-paste the following <code class="highlighter-rouge">&lt;script&gt;</code>s near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+          <pre>
+            <code class="language-html" data-lang="html">
+              &lt;script src="../../assets/vendor/appear.js"&gt;&lt;/script&gt;
+            </code>
+          </pre>
+
+          <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag, to enable it.</p>
+
+          <pre>
+            <code class="language-html" data-lang="html">
+              &lt;script&gt;
+                $(document).on('ready', function () {
+                  // initialization of animation
+                  $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+                });
+              &lt;/script&gt;
+            </code>
+          </pre>
+        </div>
+
+        <div id="basic-example" class="mb-5">
+          <h2 class="h4">Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <pre>
+            <code class="language-markup" data-lang="html">
+              &lt;h1 class=""
+                  data-animation="fadeInUp"
+                  data-animation-delay="800"
+                  data-animation-duration="1500"&gt;FadeIn&lt;/h1&gt;
+            </code>
+          </pre>
+        </div>
+
+        <div id="onscroll-examples" class="mb-9">
+          <h2 class="h4">Examples <a class="anchorjs-link" href="#onscroll-examples" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="row">
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounce"
+                   data-animation-duration="1500">
+                .bounce
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="flash"
+                   data-animation-duration="1500">
+                .flash
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="pulse"
+                   data-animation-duration="1500">
+                .pulse
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rubberBand"
+                   data-animation-duration="1500">
+                .rubberBand
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="shake"
+                   data-animation-duration="1500">
+                .shake
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="headShake"
+                   data-animation-duration="1500">
+                .headShake
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="swing"
+                   data-animation-duration="1500">
+                .swing
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="tada"
+                   data-animation-duration="1500">
+                .tada
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="wobble"
+                   data-animation-duration="1500">
+                .wobble
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="jello"
+                   data-animation-duration="1500">
+                .jello
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounceIn"
+                   data-animation-duration="1500">
+                .bounceIn
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounceInDown"
+                   data-animation-duration="1500">
+                .bounceInDown
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounceInLeft"
+                   data-animation-duration="1500">
+                .bounceInLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounceInRight"
+                   data-animation-duration="1500">
+                .bounceInRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounceInUp"
+                   data-animation-duration="1500">
+                .bounceInUp
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounceOut"
+                   data-animation-duration="1500">
+                .bounceOut
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounceOutDown"
+                   data-animation-duration="1500">
+                .bounceOutDown
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounceOutLeft"
+                   data-animation-duration="1500">
+                .bounceOutLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounceOutRight"
+                   data-animation-duration="1500">
+                .bounceOutRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="bounceOutUp"
+                   data-animation-duration="1500">
+                .bounceOutUp
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeIn"
+                   data-animation-duration="1500">
+                .fadeIn
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeInDown"
+                   data-animation-duration="1500">
+                .fadeInDown
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeInDownBig"
+                   data-animation-duration="1500">
+                .fadeInDownBig
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeInLeft"
+                   data-animation-duration="1500">
+                .fadeInLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeInLeftBig"
+                   data-animation-duration="1500">
+                .fadeInLeftBig
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeInRight"
+                   data-animation-duration="1500">
+                .fadeInRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeInRightBig"
+                   data-animation-duration="1500">
+                .fadeInRightBig
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeInUp"
+                   data-animation-duration="1500">
+                .fadeInUp
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeInUpBig"
+                   data-animation-duration="1500">
+                .fadeInUpBig
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeOut"
+                   data-animation-duration="1500">
+                .fadeOut
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeOutDown"
+                   data-animation-duration="1500">
+                .fadeOutDown
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeOutDownBig"
+                   data-animation-duration="1500">
+                .fadeOutDownBig
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeOutLeft"
+                   data-animation-duration="1500">
+                .fadeOutLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeOutLeftBig"
+                   data-animation-duration="1500">
+                .fadeOutLeftBig
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeOutRight"
+                   data-animation-duration="1500">
+                .fadeOutRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeOutRightBig"
+                   data-animation-duration="1500">
+                .fadeOutRightBig
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeOutUp"
+                   data-animation-duration="1500">
+                .fadeOutUp
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="fadeOutUpBig"
+                   data-animation-duration="1500">
+                .fadeOutUpBig
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="flipInX"
+                   data-animation-duration="1500">
+                .flipInX
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="flipInY"
+                   data-animation-duration="1500">
+                .flipInY
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="flipOutX"
+                   data-animation-duration="1500">
+                .flipOutX
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="flipOutY"
+                   data-animation-duration="1500">
+                .flipOutY
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="lightSpeedIn"
+                   data-animation-duration="1500">
+                .lightSpeedIn
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="lightSpeedOut"
+                   data-animation-duration="1500">
+                .lightSpeedOut
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rotateIn"
+                   data-animation-duration="1500">
+                .rotateIn
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rotateInDownLeft"
+                   data-animation-duration="1500">
+                .rotateInDownLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rotateInDownRight"
+                   data-animation-duration="1500">
+                .rotateInDownRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rotateInUpLeft"
+                   data-animation-duration="1500">
+                .rotateInUpLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rotateInUpRight"
+                   data-animation-duration="1500">
+                .rotateInUpRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rotateOut"
+                   data-animation-duration="1500">
+                .rotateOut
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rotateOutDownLeft"
+                   data-animation-duration="1500">
+                .rotateOutDownLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rotateOutDownRight"
+                   data-animation-duration="1500">
+                .rotateOutDownRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rotateOutUpLeft"
+                   data-animation-duration="1500">
+                .rotateOutUpLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rotateOutUpRight"
+                   data-animation-duration="1500">
+                .rotateOutUpRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="hinge"
+                   data-animation-duration="1500">
+                .hinge
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="jackInTheBox"
+                   data-animation-duration="1500">
+                .jackInTheBox
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rollIn"
+                   data-animation-duration="1500">
+                .rollIn
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="rollOut"
+                   data-animation-duration="1500">
+                .rollOut
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="zoomIn"
+                   data-animation-duration="1500">
+                .zoomIn
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="zoomInDown"
+                   data-animation-duration="1500">
+                .zoomInDown
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="zoomInLeft"
+                   data-animation-duration="1500">
+                .zoomInLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="zoomInRight"
+                   data-animation-duration="1500">
+                .zoomInRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="zoomInUp"
+                   data-animation-duration="1500">
+                .zoomInUp
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="zoomOut"
+                   data-animation-duration="1500">
+                .zoomOut
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="zoomOutDown"
+                   data-animation-duration="1500">
+                .zoomOutDown
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="zoomOutLeft"
+                   data-animation-duration="1500">
+                .zoomOutLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="zoomOutRight"
+                   data-animation-duration="1500">
+                .zoomOutRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="zoomOutUp"
+                   data-animation-duration="1500">
+                .zoomOutUp
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="slideInDown"
+                   data-animation-duration="1500">
+                .slideInDown
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="slideInLeft"
+                   data-animation-duration="1500">
+                .slideInLeft
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="slideInRight"
+                   data-animation-duration="1500">
+                .slideInRight
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 mb-5">
+              <div class="bg-secondary text-white rounded p-5"
+                   data-animation="slideInUp"
+                   data-animation-duration="1500">
+                .slideInUp
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="js-behavior" class="mb-5">
+          <h2 class="h4">JavaScript behavior <a class="anchorjs-link" href="#js-behavior" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+        </div>
+
+        <div id="objects" class="mb-5">
+          <h2 class="h4">Objects <a class="anchorjs-link" href="#objects" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <pre>
+            <code class="language-js" data-lang="js">
+              bounds: -100 - integer
+              debounce: 50 - integer
+              inViewportClass: 'u-in-viewport' - string
+              animation: 'fadeInUp' - string
+              animationOut: false - boolean
+              animationDelay: 0 - integer
+              animationDuration: 1000 - integer
+            </code>
+          </pre>
+        </div>
+
+        <div id="callbacks" class="mb-5">
+          <h2 class="h4">Callbacks <a class="anchorjs-link" href="#callbacks" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <pre>
+            <code class="language-js" data-lang="js">
+              afterShow: function(){} - function
+              onShown: function(){} - function
+              onHidden: function(){} - function
+            </code>
+          </pre>
+        </div>
+
+        <div id="methods" class="mb-9">
+          <h2 class="h4">Methods <a class="anchorjs-link" href="#methods" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code class="highlighter-rouge">data-</code>, as in <code class="highlighter-rouge">data-in-viewport-class=""</code>.</p>
+
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Attribute</th>
+                <th>Description</th>
+                <th>Example value</th>
+                <th>Default value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-in-viewport-class</code></p>
+                </td>
+                <td>The class that triggers the plugin when you reach the viewport.</td>
+                <td>u-animated</td>
+                <td>u-in-viewport</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-animation</code></p>
+                </td>
+                <td>Effect of appearance. All available animation classes can be found via <a href="https://daneden.github.io/animate.css/">animate.css</a>.</td>
+                <td>fadeIn</td>
+                <td>fadeInUp</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-animation-delay</code></p>
+                </td>
+                <td>Delay of animation (ms) that indicates when animation will start after the element hits the viewport.</td>
+                <td>1000</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">data-animation-duration</code></p>
+                </td>
+                <td>Duration of animation (ms).</td>
+                <td>500</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">afterShow: function (invoker) {}</code></p>
+                </td>
+                <td>Executes the code inside the body of the function each time it appears.</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">onShown: function (invoker) {}</code></p>
+                </td>
+                <td>Executes the code inside the body of the function each time it is shown.</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <p><code class="highlighter-rouge">onHidden: function (invoker) {}</code></p>
+                </td>
+                <td>Executes the code inside the body of the function each time it is hidden.</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="javascript:;"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../assets/vendor/appear.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="../../documentation/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/components/hs.header.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
+  <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../../assets/js/components/hs.scroll-nav.js"></script>
+  <script src="../../assets/js/components/hs.onscroll-animation.js"></script>
+  <script src="../../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of malihu scrollbar
+      var $scrollbar = $('.js-scrollbar');
+      $.HSCore.components.HSMalihuScrollBar.init($scrollbar);
+      $($scrollbar).mCustomScrollbar('scrollTo', '#components li a.active');
+
+      // initialization of scroll animation
+      $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+    });
+
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+
+      // initialization of HSScrollNav component
+      var offsetTop = $('#logoAndNav').outerHeight();
+
+      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 700,
+        customOffsetTop: 77
+      });
+    });
+  </script>
+</body>
+</html>
