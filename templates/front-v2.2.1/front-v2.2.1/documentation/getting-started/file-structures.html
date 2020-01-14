@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>File Structures - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="../../documentation/assets/css/starter.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--navbar-bg u-header--bg-transparent-xl u-header--sticky-top-xl u-header--starter">
+    <div class="u-header__section bg-primary">
+      <div id="logoAndNav" class="container-fluid">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-xl u-header__navbar u-header__navbar--no-space">
+          <div class="u-header--starter__logo">
+            <!-- White Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-default u-header__navbar-brand-text-white" href="../../html/home/index.html" aria-label="Front">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                <path fill="#E1E4EA" opacity=".65" d="M23,41.1L23,41.1c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C41,33,32.9,41.1,23,41.1z"/>
+                <path class="fill-white" opacity=".5" d="M28,36L28,36c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3C43,0.1,46,3.1,46,6.7v11.4C46,28,38,36,28,36z"/>
+                <path class="fill-white" opacity=".7" d="M18,46.1L18,46.1c-10,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C35.9,38.1,27.9,46.1,18,46.1z"/>
+                <path class="fill-primary" d="M17.4,34.1V18.4h10.2v2.9h-6.4v3.4H26v2.9h-4.8v6.5H17.4z"/>
+              </svg>
+              <span class="u-header__navbar-brand-text">Front</span>
+            </a>
+            <!-- End White Logo -->
+
+            <!-- Default Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-collapsed" href="../../html/home/index.html" aria-label="Front">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
+                <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
+                <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
+                <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
+              </svg>
+              <span class="u-header__navbar-brand-text">Front</span>
+            </a>
+            <!-- End Default Logo -->
+
+            <!-- Responsive Toggle Button -->
+            <button type="button" class="navbar-toggler btn u-hamburger"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navBar"
+                    data-toggle="collapse"
+                    data-target="#navBar">
+              <span id="hamburgerTrigger" class="u-hamburger__box">
+                <span class="u-hamburger__inner"></span>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+          </div>
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <!-- Search -->
+            <form class="form-inline input-group input-group-sm shadow-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="docsSearch">
+                  <span class="fas fa-search"></span>
+                </span>
+              </div>
+              <input class="js-hs-docs-search form-control" type="text" placeholder="Search..." aria-label="Search..." aria-describedby="docsSearch" data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+            </form>
+            <!-- End Search -->
+
+            <ul class="navbar-nav u-header__navbar-nav">
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="../../html/home/index.html">Live Preview</a>
+              </li>
+
+              <!-- Changelog -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut"
+                  data-position="left">
+                <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                  v2.2
+                </a>
+
+                <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_2_1">Latest (v2.2.1)</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_1_1">v2.1.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version1_3">v1.x</a></li>
+                </ul>
+              </li>
+              <!-- End Changelog -->
+
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-light transition-3d-hover" href="../../starter/index.html">
+                  Get Started
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== LEFT ========== -->
+  <div class="js-scrollbar hs-docs-sidebar">
+    <div class="d-flex justify-content-between py-2 py-xl-0">
+      <!-- Search -->
+      <form class="col form-inline input-group-sm u-form--no-brd">
+        <input class="js-hs-docs-search form-control w-100" type="text" placeholder="Search..." data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+      </form>
+      <!-- End Search -->
+
+      <!-- Responsive Toggle Button -->
+      <button class="btn btn-link hs-docs-sidebar__toggle" type="button"
+              data-toggle="collapse"
+              data-target="#navside-accordion"
+              aria-controls="navside-accordion"
+              aria-expanded="false"
+              aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+          <title>Menu</title>
+          <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+        </svg>
+      </button>
+      <!-- End Responsive Toggle Button -->
+    </div>
+
+    <!-- Sidebar Nav -->
+    <nav id="navside-accordion" class="hs-docs-navside collapse">
+      <div id="components" class="collapse show" data-parent="#navside-accordion">
+        <span class="hs-docs-navside__title">Getting started</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../index.html">Introduction</a></li>
+          <li><a class="active" href="file-structures.html">File structures</a></li>
+          <li><a href="approach.html">Approach</a></li>
+          <li><a href="gulp.html">Gulp</a></li>
+          <li><a href="customization.html">Customization</a></li>
+          <li><a href="credits.html">Credits</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Components</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../components/typography.html">Typography</a></li>
+          <li><a href="../components/alerts.html">Alerts</a></li>
+          <li><a href="../components/avatars.html">Avatars</a></li>
+          <li><a href="../components/badge.html">Badge</a></li>
+          <li><a href="../components/breadcrumb.html">Breadcrumb</a></li>
+          <li><a href="../components/buttons.html">Buttons</a></li>
+          <li><a href="../components/cards.html">Cards</a></li>
+          <li><a href="../components/collapse.html">Collapse</a></li>
+          <li><a href="../components/dividers.html">Dividers</a></li>
+          <li><a href="../components/forms.html">Forms</a></li>
+          <li><a href="../components/list-group.html">List group</a></li>
+          <li><a href="../components/navs.html">Navs</a></li>
+          <li><a href="../components/pagination.html">Pagination</a></li>
+          <li><a href="../components/progress.html">Progress</a></li>
+          <li><a href="../components/sticky-footer.html">Sticky footer</a></li>
+          <li><a href="../components/tables.html">Tables</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Plugins</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../plugins/animations.html">Animations</a></li>
+          <li><a href="../plugins/background-video.html">Background video</a></li>
+          <li><a href="../plugins/bootstrap-select.html">Bootstrap select</a></li>
+          <li><a href="../plugins/bootstrap-tagsinput.html">Bootstrap tagsinput</a></li>
+          <li><a href="../plugins/charts.html">Charts</a></li>
+          <li><a href="../plugins/circles.html">Circles (Pie chart)</a></li>
+          <li><a href="../plugins/clipboard.html">Clipboard</a></li>
+          <li><a href="../plugins/countdown.html">Countdown</a></li>
+          <li><a href="../plugins/counters.html">Counters</a></li>
+          <li><a href="../plugins/cubeportfolio.html">Cubeportfolio</a></li>
+          <li><a href="../plugins/datatables.html">Datatables</a></li>
+          <li><a href="../plugins/unfold.html">Unfold (Dropdown and others)</a></li>
+          <li><a href="../plugins/fancybox.html">Fancybox</a></li>
+          <li><a href="../plugins/file-attach.html">File attach</a></li>
+          <li><a href="../plugins/flatpickr.html">Flatpickr</a></li>
+          <li><a href="../plugins/google-map.html">Google Map</a></li>
+          <li><a href="../plugins/go-to.html">Go-to</a></li>
+          <li><a href="../plugins/headers.html">Headers</a></li>
+          <li><a href="../plugins/header-mega-menu.html">Header mega menu</a></li>
+          <li><a href="../plugins/header-fullscreen.html">Header fullscreen</a></li>
+          <li><a href="../plugins/header-searches.html">Header searches</a></li>
+          <li><a href="../plugins/icon-libraries.html">Icon libraries</a></li>
+          <li><a href="../plugins/malihu-scrollbar.html">Malihu scrollbar</a></li>
+          <li><a href="../plugins/modal-window.html">Modal window</a></li>
+          <li><a href="../plugins/parallax.html">Parallax</a></li>
+          <li><a href="../plugins/password-strength.html">Password strength</a></li>
+          <li><a href="../plugins/range-slider.html">Range slider</a></li>
+          <li><a href="../plugins/scroll-effect.html">Scroll effect</a></li>
+          <li><a href="../plugins/scroll-nav.html">Scroll nav</a></li>
+          <li><a href="../plugins/show-animation.html">Show animation</a></li>
+          <li><a href="../plugins/slick-carousel.html">Slick carousel</a></li>
+          <li><a href="../plugins/social-apis.html">Social APIs</a></li>
+          <li><a href="../plugins/step-form.html">Step form (Wizards)</a></li>
+          <li><a href="../plugins/sticky-block.html">Sticky block</a></li>
+          <li><a href="../plugins/summernote.html">Summernote WYSIWYG</a></li>
+          <li><a href="../plugins/svg.html">SVG</a></li>
+          <li><a href="../plugins/toggle-state.html">Toggle state</a></li>
+          <li><a href="../plugins/typedjs.html">Typedjs</a></li>
+          <li><a href="../plugins/validation.html">Validation</a></li>
+          <li><a href="../plugins/video-player.html">Video player</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Utilities</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../utilities/borders.html">Borders</a></li>
+          <li><a href="../utilities/colors.html">Colors</a></li>
+          <li><a href="../utilities/content-alignments.html">Content alignments (with position)</a></li>
+          <li><a href="../utilities/links.html">Links</a></li>
+          <li><a href="../utilities/position.html">Position</a></li>
+          <li><a href="../utilities/shadows.html">Shadows</a></li>
+          <li><a href="../utilities/sizing.html">Sizing</a></li>
+          <li><a href="../utilities/spacing.html">Spacing</a></li>
+          <li><a href="../utilities/transitions.html">Transitions</a></li>
+          <li><a href="../utilities/others.html">Others</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Sidebar Nav -->
+  </div>
+  <!-- ========== END LEFT ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main class="hs-docs-content space-2 space-top-xl-3" role="main">
+    <div class="row">
+      <!-- Section Nav -->
+      <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
+        <ul class="js-scroll-nav hd-doc-section-nav">
+          <li class="hd-doc-section-nav-item active">
+            <a href="#download-package">Download package</a>
+            <ul>
+              <li class="hd-doc-section-nav-item"><a href="#html">HTML</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#assets">Assets</a></li>
+            </ul>
+          </li>
+          <li class="hd-doc-section-nav-item">
+            <a href="#js-structure">JS Structure</a>
+            <ul>
+              <li class="hd-doc-section-nav-item"><a href="#core-js">Core JavaScript</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#essentials-of-hscore-objects">Essentials of HSCore Object</a></li>
+              <li class="hd-doc-section-nav-item"><a href="#advantages">Advantages</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- End Section Nav -->
+
+      <div class="col-xl-10 order-xl-1">
+        <div class="border-bottom pb-6 mb-6">
+          <h1 class="font-weight-semi-bold">File Structures</h1>
+          <p class="text-dark font-weight-normal mb-0" style="font-size: 1.125rem;">A guide to understanding how Front is structured and organized.</p>
+        </div>
+
+        <div id="download-package" class="mb-5">
+          <h2 class="h4">Download package <a class="anchorjs-link" href="#download-package" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>Download package contains four main <code class="highlighter-rouge">assets/</code>, <code class="highlighter-rouge">html/</code>, <code class="highlighter-rouge">documentation/</code> and <code class="highlighter-rouge">starter/</code> folders.</p>
+          <p>Once downloaded, unzip the compressed folder and you'll see something like this:</p>
+
+          <pre>
+            <code class="language-plaintext" data-lang="plaintext"
+              >front/
+              ├── assets/
+              │   ├── css/
+              │   │   ├── theme.css
+              │   │   ├── theme.min.css
+              │   │   ├── sticky-footer.css
+              │   ├── img/
+              │   │   ├── 32x32/
+              │   │   ├── 100x60/
+              │   │   ├── ...
+              │   ├── include/
+              │   │   ├── ajax/
+              │   │   │   ├── home-blog-agency-1/
+              │   │   │   ├── home-blog-business-1/
+              │   │   │   ├── ...
+              │   │   ├── scss/
+              │   │   │   ├── front/
+              │   │   │   │   ├── alerts/
+              │   │   │   │   ├── avatar/
+              │   │   │   │   ├── ...
+              │   │   │   |   ├── vendor/
+              │   │   │   ├── _user.scss
+              │   │   │   ├── _user-variables.scss
+              │   │   │   ├── theme.scss
+              │   ├── js/
+              │   │   ├── components/
+              │   │   │   ├── hs.chartist-area-chart.js
+              │   │   │   ├── hs.chartist-bar-chart.js
+              │   │   │   ├── ...
+              │   │   ├── hs.core.js
+              │   ├── svg/
+              │   │   ├── clients-logo/
+              │   │   │   ├── airbnb.svg
+              │   │   │   ├── airbnb-original.svg
+              │   │   │   ├── ...
+              │   │   ├── components/
+              │   │   │   ├── ...
+              │   │   ├── flat-icons/
+              │   │   │   ├── ...
+              │   │   ├── icons/
+              │   │   │   ├── ...
+              │   │   ├── illustrations/
+              │   │   │   ├── ...
+              │   │   ├── logos/
+              │   │   │   ├── ...
+              │   │   ├── preloaders/
+              │   │   │   ├── ...
+              │   ├── vendor/
+              │   │   ├── bootstrap/
+              │   │   │   ├── scss/
+              │   │   │   ├── bootstrap.css
+              │   │   │   ├── bootstrap.min.js
+              │   │   ├── chartist-js/
+              │   │   ├── ...
+              ├── design/
+              │   └── logo/
+              ├── documentation/
+              │   ├── index.html
+              │   ├── assets/
+              │   │   ├── ...
+              │   ├── components/
+              │   │   ├── *.html
+              │   │   ├── ...
+              │   ├── customization/
+              │   │   ├── *.html
+              │   │   ├── ...
+              │   └── getting-started/
+              │   │   ├── *.html
+              │   │   ├── ...
+              │   └── plugins/
+              │   │   ├── *.html
+              │   │   ├── ...
+              │   └── utilities/
+              │   │   ├── *.html
+              │   │   ├── ...
+              ├── html/
+              │   ├── account/
+              │   │   ├── *.html
+              │   │   ├── ...
+              │   ├── blog/
+              │   │   ├── *.html
+              │   │   ├── ...
+              │   ├── home/
+              │   │   ├── *.html
+              │   │   ├── ...
+              │   ├── pages/
+              │   │   ├── *.html
+              │   │   ├── ...
+              │   ├── portfolio/
+              │   │   ├── *.html
+              │   │   ├── ...
+              │   └── shop/
+              │   │   ├── *.html
+              │   │   ├── ...
+              │── starter/
+              │   │   ├── index.html
+              │   │   ├── headers/
+              └── └── └── ...
+            </code>
+          </pre>
+
+          <p>This is the most basic form of Front: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code class="highlighter-rouge">theme*.css</code> and <code class="highlighter-rouge">hs.*.js</code>), as well as compiled and minified CSS and JS (<code class="highlighter-rouge">theme*.min.css</code> and <code class="highlighter-rouge">hs.*.min.js</code>).</p>
+        </div>
+
+        <div id="html" class="mb-5">
+          <h2 class="h4">HTML <a class="anchorjs-link" href="#html" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p><code class="highlighter-rouge">html/</code> is the source for HTML pages and contains HTML templates, which you see in the <a href="../../html/home/index.html">online demo</a>. These HTML files can be opened easily in any browser, imported to any project, or modified to suit your needs.</p>
+
+          <div class="alert alert-danger mb-3" role="alert">
+            <h3 id="front-is-a-static-template" class="h6 font-weight-bold">Front is a Static Template</h3>
+            <p class="alert-text mb-0">For the time being, we do <strong>NOT</strong> offer any tutorials or any other materials on how to integrate Front with any CMS, Web Application framework (including Angular JS, Ruby on Rails and others) or any other similar technology. However, since <strong>Front is a static HTML/CSS and JS template</strong>, then it <em>should be compatible</em> with any backend technology.</p>
+          </div>
+        </div>
+
+        <div id="assets" class="mb-9">
+          <h2 class="h4">Assets <a class="anchorjs-link" href="#assets" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p><code class="highlighter-rouge">assets/</code> includes all the assets that are referenced in the HTML pages.</p>
+          <p>Precompiled versions of JavaScript and CSS files are generated in their respective <code class="highlighter-rouge">assets/js/</code> and <code class="highlighter-rouge">assets/css</code> folders to support the self-contained 'static website'.</p>
+
+          <p>Below given folders are used in the template:</p>
+          <ul>
+            <li><code class="highlighter-rouge">css</code> - CSS files</li>
+            <li><code class="highlighter-rouge">img</code> - Images</li>
+            <li><code class="highlighter-rouge">include</code> - Ajax and SASS folders with their files</li>
+            <li><code class="highlighter-rouge">js</code> - JavaSscript files</li>
+            <li><code class="highlighter-rouge">svg</code> - SVG files</li>
+            <li><code class="highlighter-rouge">vendor</code> - Third-party libraries</li>
+          </ul>
+        </div>
+
+        <div id="js-structure" class="mb-5">
+          <h2 class="h4">JavaScript structure <a class="anchorjs-link" href="#js-structure" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+        </div>
+
+        <div id="core-js" class="mb-5">
+          <h2 class="h4">Core JavaScript <a class="anchorjs-link" href="#core-js" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p class="g-mb-30">The foundation of the JavaScript structure in Front is based on one main object which does not change the root when the new functionalities are added, but instead, it only expands without affecting the behavior of the core object. The name of the object is <code class="highlighter-rouge">HSCore</code> and the content of this object looks like this:</p>
+
+          <pre>
+            <code class="language-js" data-lang="js">
+              /**
+               * HSCore -
+               *
+               * @author HtmlStream
+               * @version 1.0
+               */
+
+              ;(function($) {
+
+                'use strict';
+
+                $.HSCore = {
+                  init: function() {
+
+                    $(document).ready(function(e) {
+                      // here you can initialize all components core, which will be applied (called) in all pages,
+                      // once the DOM will be ready to go.
+
+                      // example
+                      $('[data-toggle="tooltip"]').tooltip();
+                    });
+
+                    $(window).on('load', function(e) {
+                      // here you can initialize all components core,
+                      // which should be called as soon as the all (scripts, videos, images) are loaded.
+
+                      // example:
+                      this.components.parallax.init({
+                        ...
+                      });
+                    });
+
+                  },
+
+                  // Components
+                  components: {},
+
+                  // Helpers
+                  helpers: {},
+
+                  // Settings
+                  settings: {
+                    animationEasing: 'easeInQuad', // example:
+                    animationDuration: 450, // example:
+                    rtl: false
+                    ...
+                  }
+                };
+
+                $.HSCore.init(); // Initialization of HSCore object.
+
+              })(jQuery);
+            </code>
+          </pre>
+        </div>
+
+        <div id="essentials-of-hscore-objects" class="mb-5">
+          <h2 class="h4">Essentials of HSCore Object <a class="anchorjs-link" href="#essentials-of-hscore-objects" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-5">
+            <h3 class="h6">HSCore Settings</h3>
+            <p><code class="highlighter-rouge">$.HSCore.settings</code> - here, all general settings are stored by default. For example, effects of jQuery animation and also you can store AJAX calls by default.</p>
+          </div>
+
+          <div class="mb-5">
+            <h3 class="h6">HSCore Helpers</h3>
+
+            <p><code class="highlighter-rouge">$.HSCore.helpers</code> - here, you can store helper functions in order to avoid repetition of codes or objects, which are often used by other core components (they are a part of the whole core). For example, a project needs to get the width of the browser's scrollbar and since it is different in all browsers you should write a tiny simple script. In this case, you may just place your script under the helpers.</p>
+
+            <p>In order to keep, the main file clear and easy-to-use, all helper components can be placed under the following path <code class="highlighter-rouge">assets/js/helpers/</code></p>
+          </div>
+
+          <div class="mb-5">
+            <h3 class="h6">HSCore Components</h3>
+            <p><code class="highlighter-rouge">$.HSCore.components</code> - this is <strong class="text-dark">the most voluminous (massive) component</strong>. Here you can include all the starter components of the template. The aim of this approach is to give developers as much flexibilities as possible by providing all major parameters of starter components via <code class="highlighter-rouge">data-*</code> attributes initializing.</p>
+
+            <p>As an example, let's take a look how a "FancyBox" plugin (library) is used within this JavaScript approach by creating decorator pattern (wrapper) around the plugin, where it automatically initializes the diagram on the basis of the <code class="highlighter-rouge">data-*</code> obtained. In the result, the initialization is pretty simple:</p>
+
+            <pre>
+              <code class="language-js">
+                $.HSCore.components.HSFancyBox.init('.js-fancybox'), {
+                  // Here you can include the object with its settings or you can just skip it.
+                });
+              </code>
+            </pre>
+
+            <p>Such an object wrapper can be referred to the components and as the result the initialization looks like this:</p>
+
+            <pre>
+              <code class="language-js">$.HSCore.components.HSFancyBox.init();</code>
+            </pre>
+          </div>
+
+          <div class="mb-5">
+            <h5 class="g-font-size-16 text-dark">Expanding (Extension) the Decorator Pattern (Wrapper)</h5>
+            <p>Extension of similar object can be in separate files, which even gives flexibility to keep the main file clear which is highly recommended. All wrappers of starter's components are located under the following path <code class="highlighter-rouge">assets/js/components/</code></p>
+
+            <p>Here is an example how decorator pattern (wrapper) looks like:</p>
+
+            <pre>
+              <code class="language-js" data-lang="js">
+                /**
+                 * Starter Component wrapper.
+                 *
+                 * @author Htmlstream
+                 * @version 1.0
+                 * @requires (also, it can be integrated with other plugins)
+                 *
+                 */
+                ;(function($){
+                  'use strict';
+
+                  $.Front.components.StarterComponent = {
+
+                    _baseConfig : {
+                      // ...
+                    },
+
+                    /**
+                     * Initialization of StarterComponent wrapper.
+                     *
+                     * @param jQuery collection (optional)
+                     * @param Object config (optional)
+                     *
+                     * @return jQuery pageCollection - collection of initialized items.
+                     */
+                    init: function(collection, config) {
+
+                      // ...
+
+                    },
+
+                    ...
+
+                  }
+
+                })(jQuery);
+              </code>
+            </pre>
+          </div>
+        </div>
+
+        <div id="advantages" class="mb-5">
+          <h2 class="h4">Advantages <a class="anchorjs-link" href="#advantages" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <ul>
+            <li>Avoiding the probabilities of conflicts between Front codes and third party plugins (libraries).</li>
+            <li>Intuitive clear architecture.</li>
+            <li>Everything is structured, each component in its own file and in its component in the main object.</li>
+            <li>The ability of extending functionality without affecting the behavior of the core object and not changing the existing functionality.</li>
+            <li>Creation of wrapper components simply solves complicated initializations structures for the users.</li>
+            <li>Very easy access to any starters components and core settings from anywhere in the template.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="javascript:;"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="../../documentation/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/components/hs.header.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
+  <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../../assets/js/components/hs.scroll-nav.js"></script>
+  <script src="../../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of malihu scrollbar
+      var $scrollbar = $('.js-scrollbar');
+      $.HSCore.components.HSMalihuScrollBar.init($scrollbar);
+      $($scrollbar).mCustomScrollbar('scrollTo', '#components li a.active');
+    });
+
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+
+      // initialization of HSScrollNav component
+      var offsetTop = $('#logoAndNav').outerHeight();
+
+      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 700,
+        customOffsetTop: 77
+      });
+    });
+  </script>
+</body>
+</html>
