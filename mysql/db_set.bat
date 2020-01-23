@@ -1,4 +1,5 @@
-SET table=meat_king
+SET table=comments
+
 echo %table%
 
 @ECHO OFF

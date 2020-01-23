@@ -1,2 +1,5 @@
-mysqldump -u root -p meat_king > meat_king.sql
+SET table=comments
+echo Exporting...
+mysqldump -u root -p %table% > %table%.sql
 echo Complete!
+pause

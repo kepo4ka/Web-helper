@@ -1,0 +1,18 @@
+{
+    "name": "kepo4ka/myhelper",
+    "description": "Just php help functions",
+    "type": "library",
+    "authors": [
+        {
+            "name": "kepo4ka",
+            "email": "konstantin.bugulov@mail.ru"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "MyHelper": "/"
+        }
+    },
+
+    "require": {}
+}

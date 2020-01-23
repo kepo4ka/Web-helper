@@ -4,13 +4,11 @@ class Content
 {
     public static function pagination($link_url, $page, $total_rows, $rows_per_page = 0, $max_pages = 0, $pagination_label = false, $target_elem = false)
     {
-        global $CFG;
-
       //  $first_text = Lang::string('first-page');
 	  //$last_text = Lang::string('last-page');
 		
 		 $first_text = '<<';
-        $last_text = ">>;
+        $last_text = ">>";
 
         $link_url = preg_replace('/[^a-zA-Z\.-]/', '', $link_url);
         $page = preg_replace('/[^0-9]/', '', $page);
