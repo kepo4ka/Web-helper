@@ -13,6 +13,5 @@
       "MyHelper": "php/"
     }
   },
-  "license": "MIT",
-  "minimum-stability": "dev"
+  "license": "MIT"
 }
