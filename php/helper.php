@@ -243,7 +243,7 @@ class Helper
             return false;
         }
 
-       self::makeDir(dirname(__FILE__) . '\cookies');
+        self::makeDir(dirname(__FILE__) . '\cookies');
 
         $full_path = dirname(__FILE__) . '\cookies/' . $config['proccess_id'] . '.txt';
         if ($second) {
@@ -301,10 +301,128 @@ class Helper
     }
 
 
-    public static function inputFilter($var)
+    /**
+     * Валидация значения
+     * @param $input string Исходное значение
+     * @param null $link MYSQLI LINK
+     * @return mixed|string "Очищенное" значение
+     */
+    public static function inputFilter($input)
     {
-        $var = preg_replace('/[^\w]/m', '', $var);
-        return $var;
+        $input = trim($input);
+        $input = html_entity_decode($input);
+
+        $input = strip_tags($input);
+
+        $input = regexpFilter($input);
+        $input = scriptFilter($input);
+        return $input;
+    }
+
+
+    /**
+     * Очистка от js тэга
+     * @param $input string Исходное значение
+     * @return mixed "Очищенное" значение
+     */
+    public static function scriptFilter($input)
+    {
+        return str_replace('script', '', $input);
+    }
+
+
+    /**
+     * Очистка строки от "плохих" символов
+     * @param $input string Исходная строка
+     * @return string "Очищенная" строка
+     */
+    public static function regexpFilter($input)
+    {
+        return preg_replace('/[^_\w\s\-+=,.\\/@#$^&\(\)\{\}\[\]!:]/u', '', $input);
+    }
+
+
+    /**
+     * Форматирование строки перед выводом
+     * @param $text string Исходная строка
+     * @return mixed|string Отформатированная строка
+     */
+    function readableText($text)
+    {
+        $formatted_text = preg_replace('/[_-]/', ' ', $text);
+        $formatted_text = ucwords($formatted_text);
+        return $formatted_text;
+    }
+
+
+    /**
+     * UTF8 encode
+     * @param $d
+     * @return array|string
+     */
+    public static function utf8ize($d)
+    {
+        if (is_array($d)) {
+            foreach ($d as $k => $v) {
+                $d[$k] = self::utf8ize($v);
+            }
+        } else if (is_string($d)) {
+            return utf8_encode($d);
+        }
+        return $d;
+    }
+
+    /**
+     * Получить максимальное значение по ключу в ассоциативном массиве
+     * @param $array array Исходный массив
+     * @param $key_name string Ключ
+     * @return mixed|string Максимум
+     */
+    public static function max_array_value($array, $key_name)
+    {
+        $max = '';
+        foreach ($array as $key => $value) {
+            $make_array[] = $value[$key_name];
+            $max = max($make_array);
+        }
+        return $max;
+    }
+
+
+    /**
+     * Получить минимальное значение по ключу в ассоциативном массиве
+     * @param $array array Исходный массив
+     * @param $key_name string Ключ
+     * @return mixed|string Минимум
+     */
+    public static function min_array_value($array, $key_name)
+    {
+        $max = '';
+        foreach ($array as $key => $value) {
+            $make_array[] = $value[$key_name];
+            $max = min($make_array);
+        }
+        return $max;
+    }
+
+
+    public static function checkListItemExist($list, $list_key, $value)
+    {
+        foreach ($list as $item) {
+            if ($item[$list_key] == $value) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static function locationJs($url)
+    {
+        ?>
+        <script>
+            location.href = '<?=$url?>';
+        </script>
+        <?php
     }
 
 
@@ -467,7 +585,7 @@ class Helper
     {
         $dir_name = dirname($_SERVER['SCRIPT_NAME']);
 
-        $dir =self:: recDirName($_SERVER['SCRIPT_NAME'], 0);
+        $dir = self:: recDirName($_SERVER['SCRIPT_NAME'], 0);
 
 
         if ($dir_name == '\\') {
@@ -513,5 +631,28 @@ class Helper
         }
         return $content;
     }
+
+    public static function getShortMd5($mixed)
+    {
+        return substr(md5(json_encode($mixed)), 0, 5);
+    }
+
+    public static function e($str)
+    {
+        return htmlspecialchars($str, ENT_QUOTES, 'utf-8');
+    }
+
+
+    public static function getvarDumpPre($variable)
+    {
+        ob_start();
+        echo "<pre>";
+        var_dump($variable);
+        echo "</pre>";
+
+        return ob_get_clean();
+
+    }
+
 
 }
