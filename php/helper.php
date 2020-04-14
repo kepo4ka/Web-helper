@@ -267,6 +267,26 @@ class Helper
         ), '?');
     }
 
+/**
+     * Получить Домен сайта
+     * @return string Домен
+     */
+    public static function baseDomain()
+    {
+        $current_url = self::base_url();
+		
+		$parsed = parse_url(Helper::base_url());
+	
+		if (empty($parsed) || empty($parsed['scheme']) || empty($parsed['host']))
+		{
+			return false;
+		}
+		
+		$domain = $parsed['scheme'] . '://' . $parsed['host'];
+		
+		return $domain;
+    }
+
 
     /**
      * Получить последнюю часть Url
