@@ -1,0 +1,19 @@
+{
+    "name": "kepo4ka/admin",
+    "type": "project",
+    "authors": [
+        {
+            "name": "kepo4ka",
+            "email": "konstantin.bugulov@mail.ru"
+        }
+    ],
+    "require": {
+        "kepo4ka/helper": "dev-master"
+    }
+    ,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kepo4ka/myHelper.git"
+        }]
+}
